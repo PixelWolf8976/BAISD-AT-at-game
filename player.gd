@@ -1,5 +1,7 @@
 extends Area2D
 
+signal hitWall
+
 @export var defaultMaxSpeed = 600.0
 @export var corneringMaxSpeed = 500.0
 @export var acceleration = 200.0
@@ -61,3 +63,8 @@ func _process(delta):
 	position += velocity * delta
 	position = position.clamp(Vector2.ZERO, screen_size)
 	pass
+
+
+func _on_body_entered(body):
+	
+	pass # Replace with function body.
