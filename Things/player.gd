@@ -2,12 +2,12 @@ extends Area2D
 
 signal hitWall
 
-@export var defaultMaxSpeed = 600.0
-@export var corneringMaxSpeed = 500.0
+@export var defaultMaxSpeed = 500.0
+@export var corneringMaxSpeed = 475.0
 @export var acceleration = 200.0
 
-@export var rotationMaxSpeed = 20
-@export var rotationAcceleration = 10
+@export var rotationMaxSpeed = 7
+@export var rotationAcceleration = 7
 
 var currentMaxSpeed
 var speed = 0.0
@@ -42,13 +42,13 @@ func _process(delta):
 	else:
 		if rotationSpeed < 0:
 			currentMaxSpeed = corneringMaxSpeed
-			rotationSpeed += rotationAcceleration * 1.5 * delta
+			rotationSpeed += rotationAcceleration * 2 * delta
 			if rotationSpeed > 0:
 				rotationSpeed = 0
 				currentMaxSpeed = defaultMaxSpeed
 		elif rotationSpeed > 0:
 			currentMaxSpeed = corneringMaxSpeed
-			rotationSpeed -= rotationAcceleration * 1.5 * delta
+			rotationSpeed -= rotationAcceleration * 2 * delta
 			if rotationSpeed < 0:
 				rotationSpeed = 0
 				currentMaxSpeed = defaultMaxSpeed
@@ -61,7 +61,6 @@ func _process(delta):
 		velocity = velocity.normalized() * speed
 	
 	position += velocity * delta
-	position = position.clamp(Vector2.ZERO, screen_size)
 	pass
 
 

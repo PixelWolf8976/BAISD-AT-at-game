@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8kjijcmsnr0y"]
+
+[ext_resource type="PackedScene" uid="uid://up8xrcnto3km" path="res://Scenes/player.tscn" id="1_ig2i0"]
+[ext_resource type="PackedScene" uid="uid://cu1112d3nmh1m" path="res://Scenes/barrier.tscn" id="2_wsnxj"]
+[ext_resource type="Script" path="res://Things/CameraScript.gd" id="3_78rmh"]
+
+[node name="Base Test Scene" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ig2i0")]
+position = Vector2(25, 13)
+
+[node name="Barriers" type="Node2D" parent="."]
+
+[node name="Barrier" parent="Barriers" instance=ExtResource("2_wsnxj")]
+position = Vector2(888, 351)
+
+[node name="Barrier2" parent="Barriers" instance=ExtResource("2_wsnxj")]
+position = Vector2(888, 291)
+
+[node name="Barrier3" parent="Barriers" instance=ExtResource("2_wsnxj")]
+position = Vector2(888, 471)
+
+[node name="Barrier4" parent="Barriers" instance=ExtResource("2_wsnxj")]
+position = Vector2(888, 411)
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target_node")]
+script = ExtResource("3_78rmh")
+target_node = NodePath("../Player")
