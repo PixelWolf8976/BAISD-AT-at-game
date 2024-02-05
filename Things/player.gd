@@ -30,7 +30,9 @@ func _process(delta):
 	else:
 		if speed > 0:
 			speed -= acceleration * delta
-	
+		if speed < 0:
+			speed = 0
+	print (speed)
 	velocity = Vector2(speed, 0).rotated(rotation)
 	
 	if Input.is_action_pressed("turn_left"):
