@@ -6,8 +6,8 @@ signal hitWall
 @export var corneringMaxSpeed = 475.0
 @export var acceleration = 200.0
 
-@export var rotationMaxSpeed = 7
-@export var rotationAcceleration = 7
+@export var rotationMaxSpeed = 5
+@export var rotationAcceleration = 5
 
 var currentMaxSpeed
 var speed = 0.0
@@ -34,9 +34,13 @@ func _process(delta):
 	velocity = Vector2(speed, 0).rotated(rotation)
 	
 	if Input.is_action_pressed("turn_left"):
+		if rotationSpeed > 0:
+			rotationSpeed -= rotationAcceleration * delta
 		if rotationSpeed > -rotationMaxSpeed:
 			rotationSpeed -= rotationAcceleration * delta
 	elif Input.is_action_pressed("turn_right"):
+		if rotationSpeed < 0:
+			rotationSpeed += rotationAcceleration * delta
 		if rotationSpeed < rotationMaxSpeed:
 			rotationSpeed += rotationAcceleration * delta
 	else:
