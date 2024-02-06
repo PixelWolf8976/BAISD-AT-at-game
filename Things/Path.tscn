@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cycx54k60s5it"]
+
+[ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/Barrier.tscn" id="1_nmdvo"]
+
+[node name="Barriers" type="Node2D"]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_nmdvo")]
+rotation = 1.5708
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("1_nmdvo")]
+position = Vector2(0, -200)
+rotation = 1.5708
