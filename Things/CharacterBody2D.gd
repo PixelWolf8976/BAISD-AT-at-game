@@ -11,7 +11,7 @@ var currentMaxSpeed
 var speed = 0.0
 var rotationSpeed = 0.0
 
-func _physics_process(delta):	
+func _physics_process(delta):
 	if Input.is_action_pressed("drive_forward"):
 		if speed < currentMaxSpeed:
 			speed += acceleration * delta
