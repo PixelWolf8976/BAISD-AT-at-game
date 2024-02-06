@@ -1,15 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://cu1112d3nmh1m"]
+[gd_scene load_steps=3 format=3 uid="uid://pvkwa02gp8lm"]
 
-[ext_resource type="Texture2D" uid="uid://c8ggsmp2ijdgk" path="res://Things/Barrier.png" id="1_40t1s"]
+[ext_resource type="Texture2D" uid="uid://c8ggsmp2ijdgk" path="res://Things/Barrier.png" id="1_hekau"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2qoj6"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l8lhf"]
 size = Vector2(26, 60)
 
-[node name="Barrier" type="Area2D"]
-position = Vector2(14, 31)
+[node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_40t1s")
+texture_repeat = 2
+texture = ExtResource("1_hekau")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_2qoj6")
+shape = SubResource("RectangleShape2D_l8lhf")
