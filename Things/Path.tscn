@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cycx54k60s5it"]
 
-[ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/barrier.tscn" id="1_nmdvo"]
+[ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/Barrier.tscn" id="1_nmdvo"]
 [ext_resource type="Texture2D" uid="uid://obq1pgdeiiou" path="res://Resources/BAISD-AT Game Road.png" id="2_das0o"]
 
 [node name="Barriers" type="Node2D"]
