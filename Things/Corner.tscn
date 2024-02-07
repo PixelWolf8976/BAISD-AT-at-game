@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dm8f72kl05gg"]
+[gd_scene load_steps=4 format=3 uid="uid://dm8f72kl05gg"]
 
 [ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/Barrier.tscn" id="1_h5wry"]
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="2_d8nbw"]
+[ext_resource type="Texture2D" uid="uid://obq1pgdeiiou" path="res://Resources/BAISD-AT Game Road.png" id="3_yf3gg"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -58,3 +59,65 @@ rotation = -1.37532
 
 [node name="Barriers" parent="." instance=ExtResource("2_d8nbw")]
 position = Vector2(-98, -41)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-35, -140)
+rotation = -1.55509
+scale = Vector2(1.12125, 1.39062)
+texture = ExtResource("3_yf3gg")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(140, 38)
+scale = Vector2(1.17557, 1.39062)
+texture = ExtResource("3_yf3gg")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(79, -77)
+rotation = -0.785398
+scale = Vector2(1.17557, 1.39062)
+texture = ExtResource("3_yf3gg")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(123, -22)
+rotation = -0.392699
+scale = Vector2(1.12125, 1.39062)
+texture = ExtResource("3_yf3gg")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(28, -125)
+rotation = -1.1781
+scale = Vector2(1.12125, 1.39062)
+texture = ExtResource("3_yf3gg")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(49.588, -97.2258)
+rotation = -0.986111
+scale = Vector2(1.18676, 1.30437)
+texture = ExtResource("3_yf3gg")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(-8, -127)
+rotation = -1.37532
+scale = Vector2(1.12125, 1.39062)
+texture = ExtResource("3_yf3gg")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(98.4712, -44.6444)
+rotation = -0.588176
+scale = Vector2(1.29435, 1.39062)
+texture = ExtResource("3_yf3gg")
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(138.55, 9.32945)
+rotation = -0.200713
+scale = Vector2(1.25555, 1.39062)
+texture = ExtResource("3_yf3gg")
