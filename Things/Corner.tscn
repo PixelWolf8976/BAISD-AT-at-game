@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm8f72kl05gg"]
+
+[ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/Barrier.tscn" id="1_h5wry"]
+[ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="2_d8nbw"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(-45.13, -30)
+rotation = -1.1781
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(-0.130005, 0)
+rotation = -0.785398
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(29.87, 45)
+rotation = -0.392699
+
+[node name="Barriers2" parent="." instance=ExtResource("2_d8nbw")]
+position = Vector2(240.87, 98)
+rotation = -1.5708
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(240.87, 38)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(-38.13, -241)
+rotation = 1.5708
+
+[node name="StaticBody2D14" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(156.87, -157)
+rotation = -0.785398
+
+[node name="StaticBody2D15" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(61.87, -220)
+rotation = -1.1781
+
+[node name="StaticBody2D16" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(219.87, -62)
+rotation = -0.392699
+
+[node name="StaticBody2D17" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(236.87, -7)
+rotation = -0.200713
+
+[node name="StaticBody2D18" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(112.87, -193)
+rotation = -0.980875
+
+[node name="StaticBody2D19" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(192.87, -113)
+rotation = -0.588176
+
+[node name="StaticBody2D20" parent="." instance=ExtResource("1_h5wry")]
+position = Vector2(6.87, -237)
+rotation = -1.37532
+
+[node name="Barriers" parent="." instance=ExtResource("2_d8nbw")]
+position = Vector2(-98, -41)

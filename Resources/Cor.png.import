@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8ggsmp2ijdgk"
-path="res://.godot/imported/Barrier.png-dfdc8e1d976a87a2ca8296a1dbd8b334.ctex"
+uid="uid://co207rjmcrdcl"
+path="res://.godot/imported/Cor.png-0206d3ebcb0c9c6f0b7d6236faf664f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Things/Barrier.png"
-dest_files=["res://.godot/imported/Barrier.png-dfdc8e1d976a87a2ca8296a1dbd8b334.ctex"]
+source_file="res://Resources/Cor.png"
+dest_files=["res://.godot/imported/Cor.png-0206d3ebcb0c9c6f0b7d6236faf664f8.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6bf44otgmru4"
-path="res://.godot/imported/icon.svg-862da6554d21991f7bf4847b2da11997.ctex"
+uid="uid://c8ggsmp2ijdgk"
+path="res://.godot/imported/Barrier.png-8a4c9ed7c59f78d50a3435c2b5f8ab18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Things/icon.svg"
-dest_files=["res://.godot/imported/icon.svg-862da6554d21991f7bf4847b2da11997.ctex"]
+source_file="res://Resources/Barrier.png"
+dest_files=["res://.godot/imported/Barrier.png-8a4c9ed7c59f78d50a3435c2b5f8ab18.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

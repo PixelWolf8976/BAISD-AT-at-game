@@ -13,7 +13,7 @@ config_version=5
 config/name="Racing game"
 run/main_scene="res://Scenes/Base_test_scene.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://Things/icon.svg"
+config/icon="res://Resources/icon.svg"
 
 [display]
 

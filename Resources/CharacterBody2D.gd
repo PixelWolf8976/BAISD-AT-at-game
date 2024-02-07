@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var defaultMaxSpeed = 500.0
 @export var corneringMaxSpeed = 475.0
+@export var wallMaxSpeed = 400.0
 @export var acceleration = 200.0
 
 @export var rotationMaxSpeed = 5
@@ -10,6 +11,7 @@ extends CharacterBody2D
 var currentMaxSpeed
 var speed = 0.0
 var rotationSpeed = 0.0
+var isOnWall = false
 
 func _physics_process(delta):
 	if Input.is_action_pressed("drive_forward"):
@@ -20,7 +22,7 @@ func _physics_process(delta):
 			speed -= acceleration * delta
 		if speed < 0:
 			speed = 0
-	print (speed)
+	
 	velocity = Vector2(speed, 0).rotated(rotation)
 	
 	# code for left & right turns
@@ -37,23 +39,41 @@ func _physics_process(delta):
 			rotationSpeed += rotationAcceleration * delta
 	else:
 		if rotationSpeed < 0:
-			currentMaxSpeed = corneringMaxSpeed
+			if isOnWall:
+				currentMaxSpeed = wallMaxSpeed
+			else:
+				currentMaxSpeed = corneringMaxSpeed
 			rotationSpeed += rotationAcceleration * 2 * delta
 			if rotationSpeed > 0:
 				rotationSpeed = 0
+			if isOnWall:
+				currentMaxSpeed = wallMaxSpeed
+			else:
 				currentMaxSpeed = defaultMaxSpeed
 		elif rotationSpeed > 0:
-			currentMaxSpeed = corneringMaxSpeed
+			if isOnWall:
+				currentMaxSpeed = wallMaxSpeed
+			else:
+				currentMaxSpeed = corneringMaxSpeed
 			rotationSpeed -= rotationAcceleration * 2 * delta
 			if rotationSpeed < 0:
 				rotationSpeed = 0
+			if isOnWall:
+				currentMaxSpeed = wallMaxSpeed
+			else:
 				currentMaxSpeed = defaultMaxSpeed
 		else:
-			currentMaxSpeed = defaultMaxSpeed
+			if isOnWall:
+				currentMaxSpeed = wallMaxSpeed
+			else:
+				currentMaxSpeed = defaultMaxSpeed
 	
 	rotation += rotationSpeed * delta
 	
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
 	
-	move_and_slide()
+	if move_and_slide():
+		isOnWall = true
+	else:
+		isOnWall = false

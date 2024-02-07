@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://pvkwa02gp8lm"]
 
-[ext_resource type="Texture2D" uid="uid://c8ggsmp2ijdgk" path="res://Things/Barrier.png" id="1_hekau"]
+[ext_resource type="Texture2D" uid="uid://c8ggsmp2ijdgk" path="res://Resources/Barrier.png" id="1_whkdb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l8lhf"]
 size = Vector2(26, 60)
@@ -9,7 +9,7 @@ size = Vector2(26, 60)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_repeat = 2
-texture = ExtResource("1_hekau")
+texture = ExtResource("1_whkdb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_l8lhf")

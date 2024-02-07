@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://pw7pqqo7buev"]
-
-[ext_resource type="Texture2D" uid="uid://c8ggsmp2ijdgk" path="res://Things/Barrier.png" id="1_wekyu"]
-
-[node name="Sprite2D" type="Sprite2D"]
-texture = ExtResource("1_wekyu")
