@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cycx54k60s5it"]
+[gd_scene load_steps=3 format=3 uid="uid://cycx54k60s5it"]
 
-[ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/Barrier.tscn" id="1_nmdvo"]
+[ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/barrier.tscn" id="1_nmdvo"]
+[ext_resource type="Texture2D" uid="uid://obq1pgdeiiou" path="res://Resources/BAISD-AT Game Road.png" id="2_das0o"]
 
 [node name="Barriers" type="Node2D"]
 
@@ -10,3 +11,10 @@ rotation = 1.5708
 [node name="StaticBody2D2" parent="." instance=ExtResource("1_nmdvo")]
 position = Vector2(0, -200)
 rotation = 1.5708
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(-0.0654745, -100)
+rotation = 1.5708
+scale = Vector2(1, 1.20298)
+texture = ExtResource("2_das0o")
