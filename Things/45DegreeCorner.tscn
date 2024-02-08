@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf5647yiagq8j"]
+
+[ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="1_6rqsi"]
+[ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/Barrier.tscn" id="2_uf444"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Barriers" parent="." instance=ExtResource("1_6rqsi")]
+
+[node name="Barriers2" parent="." instance=ExtResource("1_6rqsi")]
+position = Vector2(120, 51)
+rotation = 0.785398
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_uf444")]
+position = Vector2(64, 16)
+rotation = 1.98095
+scale = Vector2(1, 1.4)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_uf444")]
+position = Vector2(57, -194)
+rotation = 1.76802
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_uf444")]
+position = Vector2(113, -178)
+rotation = 1.91986
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_uf444")]
+position = Vector2(217, -127)
+rotation = 2.16072
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_uf444")]
+position = Vector2(168, -155)
+rotation = 2.00713
