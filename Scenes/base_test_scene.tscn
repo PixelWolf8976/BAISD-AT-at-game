@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c8kjijcmsnr0y"]
+[gd_scene load_steps=6 format=3 uid="uid://c8kjijcmsnr0y"]
 
 [ext_resource type="PackedScene" uid="uid://baajkcg4mw3jk" path="res://Scenes/Player1.tscn" id="1_1y3cj"]
 [ext_resource type="Script" path="res://Resources/CameraScript.gd" id="3_5kjtc"]
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="3_68vrh"]
 [ext_resource type="PackedScene" uid="uid://dm8f72kl05gg" path="res://Things/Corner.tscn" id="4_f7uof"]
+[ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="5_5wooo"]
 
 [node name="Base Test Scene" type="Node2D"]
 
@@ -77,3 +78,593 @@ position = Vector2(1140, 0)
 
 [node name="Node2D" parent="Barriers" instance=ExtResource("4_f7uof")]
 position = Vector2(1298, 41)
+
+[node name="Barriers21" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1539, 199)
+rotation = -1.5708
+
+[node name="Barriers22" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1539, 259)
+rotation = -1.5708
+
+[node name="Barriers23" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1539, 319)
+rotation = -1.5708
+
+[node name="Barriers24" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1539, 379)
+rotation = -1.5708
+
+[node name="Barriers25" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1539, 439)
+rotation = -1.5708
+
+[node name="Barriers26" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1539, 499)
+rotation = -1.5708
+
+[node name="Barriers27" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1539, 559)
+rotation = -1.5708
+
+[node name="Barriers28" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1539, 619)
+rotation = -1.5708
+
+[node name="Node2D2" parent="Barriers" instance=ExtResource("5_5wooo")]
+position = Vector2(1588, 800)
+rotation = -2.35619
+
+[node name="Barriers29" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1631, 842)
+rotation = -2.35619
+
+[node name="Barriers30" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1673, 884)
+rotation = -2.35619
+
+[node name="Barriers31" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1715, 926)
+rotation = -2.35619
+
+[node name="Barriers32" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1757, 968)
+rotation = -2.35619
+
+[node name="Barriers33" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1799, 1010)
+rotation = -2.35619
+
+[node name="Barriers34" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1841, 1052)
+rotation = -2.35619
+
+[node name="Barriers35" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1883, 1094)
+rotation = -2.35619
+
+[node name="Barriers36" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1925, 1136)
+rotation = -2.35619
+
+[node name="Barriers37" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1967, 1178)
+rotation = -2.35619
+
+[node name="Barriers38" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2009, 1220)
+rotation = -2.35619
+
+[node name="Barriers39" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2051, 1262)
+rotation = -2.35619
+
+[node name="Barriers40" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2093, 1304)
+rotation = -2.35619
+
+[node name="Barriers41" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2135, 1346)
+rotation = -2.35619
+
+[node name="Barriers42" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2177, 1388)
+rotation = -2.35619
+
+[node name="Barriers43" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2219, 1430)
+rotation = -2.35619
+
+[node name="Barriers44" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2261, 1472)
+rotation = -2.35619
+
+[node name="Barriers45" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2483, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Barriers46" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2543, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Barriers47" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2603, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Barriers48" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2663, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Node2D4" parent="Barriers" instance=ExtResource("5_5wooo")]
+position = Vector2(2423, 1565)
+rotation = 3.14159
+
+[node name="Barriers49" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2483, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Barriers50" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2543, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Barriers51" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2603, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Barriers52" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2663, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Node2D5" parent="Barriers" instance=ExtResource("5_5wooo")]
+position = Vector2(2423, 1565)
+rotation = 3.14159
+
+[node name="Barriers53" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2723, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Barriers54" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2783, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Barriers55" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2843, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Barriers56" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2903, 1565)
+scale = Vector2(-1, -1)
+
+[node name="Node2D6" parent="Barriers" instance=ExtResource("4_f7uof")]
+position = Vector2(3056, 1806)
+
+[node name="Barriers57" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(3297, 1964)
+rotation = -1.5708
+
+[node name="Barriers58" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(3297, 2024)
+rotation = -1.5708
+
+[node name="Barriers59" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(3297, 2084)
+rotation = -1.5708
+
+[node name="Barriers60" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(3297, 2144)
+rotation = -1.5708
+
+[node name="Node2D7" parent="Barriers" instance=ExtResource("4_f7uof")]
+position = Vector2(3056, 2297)
+rotation = 1.5708
+
+[node name="Barriers61" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2898, 2538)
+
+[node name="Barriers62" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2838, 2538)
+
+[node name="Barriers63" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2778, 2538)
+
+[node name="Barriers64" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2718, 2538)
+
+[node name="Barriers65" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2658, 2538)
+
+[node name="Barriers66" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2598, 2538)
+
+[node name="Barriers67" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2538, 2538)
+
+[node name="Barriers68" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2478, 2538)
+
+[node name="Barriers69" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2418, 2538)
+
+[node name="Barriers70" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2358, 2538)
+
+[node name="Barriers71" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2298, 2538)
+
+[node name="Barriers72" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2238, 2538)
+
+[node name="Barriers73" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2178, 2538)
+
+[node name="Barriers74" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2118, 2538)
+
+[node name="Barriers75" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(2058, 2538)
+
+[node name="Barriers76" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1998, 2538)
+
+[node name="Barriers77" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1938, 2538)
+
+[node name="Barriers78" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1878, 2538)
+
+[node name="Barriers79" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1818, 2538)
+
+[node name="Barriers80" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1758, 2538)
+
+[node name="Barriers81" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1698, 2538)
+
+[node name="Barriers82" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1638, 2538)
+
+[node name="Barriers83" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1578, 2538)
+
+[node name="Barriers84" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1518, 2538)
+
+[node name="Barriers85" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1458, 2538)
+
+[node name="Barriers86" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1398, 2538)
+
+[node name="Barriers87" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1338, 2538)
+
+[node name="Barriers88" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1278, 2538)
+
+[node name="Barriers89" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1218, 2538)
+
+[node name="Barriers90" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1158, 2538)
+
+[node name="Barriers91" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1098, 2538)
+
+[node name="Barriers92" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(1038, 2538)
+
+[node name="Barriers93" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(978, 2538)
+
+[node name="Barriers94" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(918, 2538)
+
+[node name="Barriers95" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(858, 2538)
+
+[node name="Barriers96" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(798, 2538)
+
+[node name="Barriers97" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(738, 2538)
+
+[node name="Barriers98" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(678, 2538)
+
+[node name="Barriers99" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(618, 2538)
+
+[node name="Barriers100" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(558, 2538)
+
+[node name="Barriers101" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(498, 2538)
+
+[node name="Barriers102" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(438, 2538)
+
+[node name="Barriers103" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(378, 2538)
+
+[node name="Barriers104" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(318, 2538)
+
+[node name="Barriers105" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(258, 2538)
+
+[node name="Barriers106" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(198, 2538)
+
+[node name="Barriers107" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(138, 2538)
+
+[node name="Barriers108" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(78, 2538)
+
+[node name="Barriers109" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(18, 2538)
+
+[node name="Barriers110" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-42, 2538)
+
+[node name="Barriers111" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-102, 2538)
+
+[node name="Barriers112" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-162, 2538)
+
+[node name="Barriers113" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-222, 2538)
+
+[node name="Barriers114" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-282, 2538)
+
+[node name="Barriers115" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-342, 2538)
+
+[node name="Barriers116" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-402, 2538)
+
+[node name="Barriers117" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-462, 2538)
+
+[node name="Barriers118" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-522, 2538)
+
+[node name="Barriers119" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-582, 2538)
+
+[node name="Barriers120" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-642, 2538)
+
+[node name="Barriers121" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-702, 2538)
+
+[node name="Barriers122" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-762, 2538)
+
+[node name="Barriers123" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-822, 2538)
+
+[node name="Barriers124" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-882, 2538)
+
+[node name="Barriers125" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-942, 2538)
+
+[node name="Barriers126" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1002, 2538)
+
+[node name="Barriers127" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1062, 2538)
+
+[node name="Barriers128" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1122, 2538)
+
+[node name="Barriers129" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1182, 2538)
+
+[node name="Node2D8" parent="Barriers" instance=ExtResource("4_f7uof")]
+position = Vector2(-1335, 2297)
+rotation = 3.14159
+
+[node name="Barriers130" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 2139)
+rotation = 1.5708
+
+[node name="Barriers131" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 2079)
+rotation = 1.5708
+
+[node name="Barriers132" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 2019)
+rotation = 1.5708
+
+[node name="Barriers133" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1959)
+rotation = 1.5708
+
+[node name="Barriers134" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1899)
+rotation = 1.5708
+
+[node name="Barriers135" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1839)
+rotation = 1.5708
+
+[node name="Barriers136" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1779)
+rotation = 1.5708
+
+[node name="Barriers137" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1719)
+rotation = 1.5708
+
+[node name="Barriers138" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1659)
+rotation = 1.5708
+
+[node name="Barriers139" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1599)
+rotation = 1.5708
+
+[node name="Barriers140" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1539)
+rotation = 1.5708
+
+[node name="Barriers141" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1479)
+rotation = 1.5708
+
+[node name="Barriers142" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1419)
+rotation = 1.5708
+
+[node name="Barriers143" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1359)
+rotation = 1.5708
+
+[node name="Barriers144" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1299)
+rotation = 1.5708
+
+[node name="Barriers145" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1239)
+rotation = 1.5708
+
+[node name="Barriers146" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1179)
+rotation = 1.5708
+
+[node name="Barriers147" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1119)
+rotation = 1.5708
+
+[node name="Barriers148" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 1059)
+rotation = 1.5708
+
+[node name="Barriers149" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 999)
+rotation = 1.5708
+
+[node name="Barriers150" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 939)
+rotation = 1.5708
+
+[node name="Barriers151" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 879)
+rotation = 1.5708
+
+[node name="Barriers152" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 819)
+rotation = 1.5708
+
+[node name="Barriers153" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 759)
+rotation = 1.5708
+
+[node name="Barriers154" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 699)
+rotation = 1.5708
+
+[node name="Barriers155" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 639)
+rotation = 1.5708
+
+[node name="Barriers156" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 579)
+rotation = 1.5708
+
+[node name="Barriers157" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 519)
+rotation = 1.5708
+
+[node name="Barriers158" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 459)
+rotation = 1.5708
+
+[node name="Barriers159" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 399)
+rotation = 1.5708
+
+[node name="Barriers160" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 339)
+rotation = 1.5708
+
+[node name="Barriers161" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 279)
+rotation = 1.5708
+
+[node name="Barriers162" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 219)
+rotation = 1.5708
+
+[node name="Node2D3" parent="Barriers" instance=ExtResource("4_f7uof")]
+position = Vector2(-1335, 41)
+rotation = -1.5708
+
+[node name="Barriers163" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1080, 0)
+
+[node name="Barriers164" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1020, 0)
+
+[node name="Barriers165" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-960, 0)
+
+[node name="Barriers166" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-900, 0)
+
+[node name="Barriers167" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-840, 0)
+
+[node name="Barriers168" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-780, 0)
+
+[node name="Barriers169" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-720, 0)
+
+[node name="Barriers170" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-660, 0)
+
+[node name="Barriers171" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-600, 0)
+
+[node name="Barriers172" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-540, 0)
+
+[node name="Barriers173" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-480, 0)
+
+[node name="Barriers174" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-420, 0)
+
+[node name="Barriers175" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-360, 0)
+
+[node name="Barriers176" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-300, 0)
+
+[node name="Barriers177" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-240, 0)
+
+[node name="Barriers178" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-180, 0)
+
+[node name="Barriers179" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-120, 0)
+
+[node name="Barriers180" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-60, 0)
+
+[node name="Barriers181" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1190, 0)
+
+[node name="Barriers182" parent="Barriers" instance=ExtResource("3_68vrh")]
+position = Vector2(-1140, 0)
+
+[node name="Barriers2" parent="." instance=ExtResource("3_68vrh")]
+position = Vector2(-1576, 183)
+rotation = 1.5708
