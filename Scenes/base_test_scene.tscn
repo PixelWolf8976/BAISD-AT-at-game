@@ -7,9 +7,6 @@
 
 [node name="Base Test Scene" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_1y3cj")]
-position = Vector2(0, -100)
-
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target_node")]
 script = ExtResource("3_5kjtc")
 target_node = NodePath("../CharacterBody2D")
@@ -77,3 +74,6 @@ position = Vector2(1140, 0)
 
 [node name="Node2D" parent="Barriers" instance=ExtResource("4_f7uof")]
 position = Vector2(1298, 41)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_1y3cj")]
+position = Vector2(3, -100)
