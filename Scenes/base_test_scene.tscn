@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://c8kjijcmsnr0y"]
+[gd_scene load_steps=6 format=3 uid="uid://c8kjijcmsnr0y"]
 
+[ext_resource type="PackedScene" uid="uid://baajkcg4mw3jk" path="res://Scenes/Player1.tscn" id="1_g2chq"]
 [ext_resource type="Script" path="res://Resources/CameraScript.gd" id="3_5kjtc"]
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="3_68vrh"]
 [ext_resource type="PackedScene" uid="uid://dm8f72kl05gg" path="res://Things/Corner.tscn" id="4_f7uof"]
@@ -7,9 +8,12 @@
 
 [node name="Base Test Scene" type="Node2D"]
 
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_g2chq")]
+position = Vector2(0, -100)
+
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target_node")]
 script = ExtResource("3_5kjtc")
-target_node = NodePath("")
+target_node = NodePath("../CharacterBody2D")
 
 [node name="Barriers" type="Node2D" parent="."]
 
@@ -661,6 +665,6 @@ position = Vector2(-1190, 0)
 [node name="Barriers182" parent="Barriers" instance=ExtResource("3_68vrh")]
 position = Vector2(-1140, 0)
 
-[node name="Barriers2" parent="." instance=ExtResource("3_68vrh")]
+[node name="Barriers183" parent="Barriers" instance=ExtResource("3_68vrh")]
 position = Vector2(-1576, 183)
 rotation = 1.5708
