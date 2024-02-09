@@ -8,20 +8,24 @@ extends CharacterBody2D
 @export var rotationMaxSpeed = 5
 @export var rotationAcceleration = 5
 
-var currentMaxSpeed
+var currentMaxSpeed = defaultMaxSpeed
 var speed = 0.0
 var rotationSpeed = 0.0
 var isOnWall = false
 
 func _physics_process(delta):
-	if Input.is_action_pressed("drive_forward"):
-		if speed < currentMaxSpeed:
-			speed += acceleration * delta
-	else:
-		if speed > 0:
-			speed -= acceleration * delta
-		if speed < 0:
-			speed = 0
+	#if Input.is_action_pressed("drive_forward"):
+	#	if speed < currentMaxSpeed:
+	#		speed += acceleration * delta
+	#else:
+	#	if speed > 0:
+	#		speed -= acceleration * delta
+	#	if speed < 0:
+	#		speed = 0
+	
+	
+	if speed < currentMaxSpeed:
+		speed += acceleration * delta
 	
 	velocity = Vector2(speed, 0).rotated(rotation)
 	
