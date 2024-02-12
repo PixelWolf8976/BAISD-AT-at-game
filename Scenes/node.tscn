@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://cra63uxbbcahl"]
+
+[ext_resource type="PackedScene" uid="uid://c8kjijcmsnr0y" path="res://Scenes/base_test_scene.tscn" id="1_g7afb"]
+
+[node name="Node" type="Node"]
+
+[node name="Viewports" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Viewports"]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="Viewports/SubViewportContainer"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="Viewports/SubViewportContainer/SubViewport"]
+position_smoothing_speed = 400.0
+rotation_smoothing_enabled = true
+rotation_smoothing_speed = 4.5
+
+[node name="Base Test Scene" parent="Viewports/SubViewportContainer/SubViewport" instance=ExtResource("1_g7afb")]
+
+[node name="SubViewportContainer2" type="SubViewportContainer" parent="Viewports"]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="Viewports/SubViewportContainer2"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="Viewports/SubViewportContainer2/SubViewport"]
+rotation_smoothing_enabled = true
+rotation_smoothing_speed = 4.5
