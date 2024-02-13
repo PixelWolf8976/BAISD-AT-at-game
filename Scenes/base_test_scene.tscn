@@ -671,6 +671,5 @@ position = Vector2(-1140, 0)
 position = Vector2(-1576, 183)
 rotation = 1.5708
 
-[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target_node")]
+[node name="Camera2D" type="Camera2D" parent="."]
 script = ExtResource("6_coqh1")
-target_node = NodePath("../Player 1")
