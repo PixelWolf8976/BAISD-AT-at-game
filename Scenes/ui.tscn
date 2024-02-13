@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk0dki5105t"]
+
+[ext_resource type="Texture2D" uid="uid://blv82bk2mx5b" path="res://Resources/Spedometer.png" id="1_kpckx"]
+[ext_resource type="Texture2D" uid="uid://ctf6rx14anesw" path="res://Resources/SpedometerLine.png" id="2_intsi"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Spedometer" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 1.0
+offset_top = 41.0
+offset_right = 1.0
+offset_bottom = 41.0
+
+[node name="Speedometer" type="TextureRect" parent="Spedometer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 2.5
+anchor_bottom = 2.5
+offset_left = 1819.0
+offset_top = 939.0
+offset_right = 1919.0
+offset_bottom = 1039.0
+texture = ExtResource("1_kpckx")
+
+[node name="Line" type="TextureRect" parent="Spedometer"]
+layout_mode = 0
+offset_left = 1819.0
+offset_top = 939.0
+offset_right = 1919.0
+offset_bottom = 1039.0
+pivot_offset = Vector2(50.5, 51.5)
+texture = ExtResource("2_intsi")

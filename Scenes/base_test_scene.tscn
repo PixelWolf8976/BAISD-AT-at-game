@@ -12,7 +12,9 @@
 [node name="Player 1" parent="." instance=ExtResource("1_g2chq")]
 position = Vector2(0, -50)
 motion_mode = 1
-rotationMaxSpeed = 3
+defaultMaxSpeed = 1999.0
+rotationMaxSpeed = 100
+rotationAcceleration = 50
 
 [node name="Player 2" parent="." instance=ExtResource("6_jhw8w")]
 position = Vector2(0, -150)
@@ -672,5 +674,6 @@ position = Vector2(-1576, 183)
 rotation = 1.5708
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target_node")]
+ignore_rotation = false
 script = ExtResource("6_coqh1")
 target_node = NodePath("../Player 1")
