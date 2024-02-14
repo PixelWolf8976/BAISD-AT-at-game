@@ -14,6 +14,7 @@ var rotationSpeed = 0.0
 var isOnWall = false
 
 func _physics_process(delta):
+	print(position.x)
 	print(delta)
 	print(1/delta)
 	
