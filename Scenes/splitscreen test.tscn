@@ -1,14 +1,15 @@
-[gd_scene load_steps=10 format=3 uid="uid://loi804kpfwop"]
+[gd_scene load_steps=11 format=3 uid="uid://loi804kpfwop"]
 
 [ext_resource type="Script" path="res://Resources/splitscreen test.gd" id="1_kqktd"]
 [ext_resource type="Script" path="res://Resources/CameraScript.gd" id="2_xgshd"]
 [ext_resource type="PackedScene" uid="uid://baajkcg4mw3jk" path="res://Scenes/Player1.tscn" id="3_bf0t6"]
 [ext_resource type="PackedScene" uid="uid://gsgjnsn2aypm" path="res://Scenes/Player2.tscn" id="4_5vj0a"]
-[ext_resource type="Script" path="res://Scenes/Level1.gd" id="5_ro7lq"]
+[ext_resource type="Script" path="res://Resources/Level1.gd" id="5_ro7lq"]
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="5_s50d0"]
 [ext_resource type="PackedScene" uid="uid://dm8f72kl05gg" path="res://Things/Corner.tscn" id="6_nrahp"]
 [ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="7_8hhr3"]
 [ext_resource type="Script" path="res://Resources/Camera2D2.gd" id="8_86p24"]
+[ext_resource type="Texture2D" uid="uid://d2qb8ekvdk42l" path="res://Resources/GARSRSRSRSRSR.png" id="9_430sj"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_kqktd")
@@ -700,6 +701,11 @@ position = Vector2(-1140, 0)
 [node name="Barriers183" parent="HBoxContainer/Viewport1/SubViewport1/BaseTestScene/Level1" instance=ExtResource("5_s50d0")]
 position = Vector2(-1576, 183)
 rotation = 1.5708
+
+[node name="Background" type="Sprite2D" parent="HBoxContainer/Viewport1/SubViewport1/BaseTestScene/Level1"]
+z_index = -20
+scale = Vector2(8, 8)
+texture = ExtResource("9_430sj")
 
 [node name="Level2" type="Node2D" parent="HBoxContainer/Viewport1/SubViewport1/BaseTestScene"]
 
