@@ -14,9 +14,6 @@ var rotationSpeed = 0.0
 var isOnWall = false
 
 func _physics_process(delta):
-	print(position.x)
-	print(delta)
-	print(1/delta)
 	
 	if speed < currentMaxSpeed:
 		speed += acceleration * delta
@@ -71,7 +68,32 @@ func _physics_process(delta):
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
 	
-	if move_and_slide():
-		isOnWall = true
+	move_and_slide()
+	
+	var collNorm = getAverageCollisionNormal()
+	if collNorm != Vector2.ZERO:
+		var collAngle = velocity.angle_to(collNorm) * 180 / PI
+		var rotInDeg = rotation * 180 / PI
+		
+		var rotDiff = collAngle - rotInDeg
+		if rotDiff < 0:
+			rotDiff *= -1
+		
+		print(rotDiff)
+		var slowDownPercent = 100 - ((rotDiff / 90) * 100)
+		print(slowDownPercent)
+		print("%")
+
+func getAverageCollisionNormal():
+	var normal = Vector2.ZERO
+	var normalCount = 0
+	for i in range(get_slide_collision_count()):
+		var slide = get_slide_collision(i)
+		if slide.get_collider():
+			normal += slide.get_normal()
+			normalCount += 1
+	
+	if normalCount > 0:
+		return normal / normalCount
 	else:
-		isOnWall = false
+		return Vector2.ZERO
