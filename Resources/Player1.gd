@@ -9,7 +9,6 @@ extends CharacterBody2D
 var currentMaxSpeed = defaultMaxSpeed
 var currentTopSpeed = currentMaxSpeed
 var speed = 0.0
-var turning = false
 
 func _physics_process(delta):
 	
