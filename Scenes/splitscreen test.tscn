@@ -41,7 +41,6 @@ script = ExtResource("2_xgshd")
 unique_name_in_owner = true
 position = Vector2(0, -50)
 motion_mode = 1
-rotationMaxSpeed = 3
 
 [node name="Player2" parent="HBoxContainer/Viewport1/SubViewport1/BaseTestScene" instance=ExtResource("4_5vj0a")]
 unique_name_in_owner = true
