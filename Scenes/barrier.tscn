@@ -1,15 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://pvkwa02gp8lm"]
 
-[ext_resource type="Texture2D" uid="uid://c8ggsmp2ijdgk" path="res://Resources/Barrier.png" id="1_whkdb"]
+[ext_resource type="Texture2D" uid="uid://p1ysfmkp4uwt" path="res://Resources/tire straingt.png" id="1_jaahl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l8lhf"]
-size = Vector2(26, 60)
+size = Vector2(287, 919)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_repeat = 2
-texture = ExtResource("1_whkdb")
+texture = ExtResource("1_jaahl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_l8lhf")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8ggsmp2ijdgk"
-path="res://.godot/imported/Barrier.png-8a4c9ed7c59f78d50a3435c2b5f8ab18.ctex"
+uid="uid://crtp57aywne8x"
+path="res://.godot/imported/Red CAR.png-eca6da6e140039329637a86a8fcd9dda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Barrier.png"
-dest_files=["res://.godot/imported/Barrier.png-8a4c9ed7c59f78d50a3435c2b5f8ab18.ctex"]
+source_file="res://Resources/Red CAR.png"
+dest_files=["res://.godot/imported/Red CAR.png-eca6da6e140039329637a86a8fcd9dda.ctex"]
 
 [params]
 

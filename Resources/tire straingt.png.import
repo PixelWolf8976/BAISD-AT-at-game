@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://obq1pgdeiiou"
-path="res://.godot/imported/BAISD-AT Game Road.png-3d8d222796cbb350f520eee272f13627.ctex"
+uid="uid://p1ysfmkp4uwt"
+path="res://.godot/imported/tire straingt.png-c25defabc1526ae42112228a65658d16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/BAISD-AT Game Road.png"
-dest_files=["res://.godot/imported/BAISD-AT Game Road.png-3d8d222796cbb350f520eee272f13627.ctex"]
+source_file="res://Resources/tire straingt.png"
+dest_files=["res://.godot/imported/tire straingt.png-c25defabc1526ae42112228a65658d16.ctex"]
 
 [params]
 

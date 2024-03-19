@@ -1,20 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://gsgjnsn2aypm"]
 
 [ext_resource type="Script" path="res://Resources/Player2.gd" id="1_7mrq4"]
-[ext_resource type="Texture2D" uid="uid://co207rjmcrdcl" path="res://Resources/Cor.png" id="2_noqx5"]
+[ext_resource type="Texture2D" uid="uid://cyr0anvr06v83" path="res://Resources/Blue CAR.png" id="2_mdd0y"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_h3q1d"]
-size = Vector2(22, 49)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gmaxi"]
+radius = 109.0
+height = 330.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_7mrq4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-13, 0)
+position = Vector2(-2.86102e-06, 0)
 rotation = 1.5708
-texture = ExtResource("2_noqx5")
+texture = ExtResource("2_mdd0y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0.45)
 rotation = 1.5708
-shape = SubResource("RectangleShape2D_h3q1d")
+shape = SubResource("CapsuleShape2D_gmaxi")
