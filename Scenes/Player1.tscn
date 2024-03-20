@@ -8,6 +8,7 @@ radius = 106.0
 height = 328.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.75, 0.75)
 script = ExtResource("1_1p1fx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
