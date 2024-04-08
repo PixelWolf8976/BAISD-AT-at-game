@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://c8kjijcmsnr0y"]
+[gd_scene load_steps=8 format=3 uid="uid://c8kjijcmsnr0y"]
 
 [ext_resource type="PackedScene" uid="uid://baajkcg4mw3jk" path="res://Scenes/Player1.tscn" id="1_g2chq"]
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="3_68vrh"]
 [ext_resource type="PackedScene" uid="uid://dm8f72kl05gg" path="res://Things/Corner.tscn" id="4_f7uof"]
 [ext_resource type="Script" path="res://Resources/CameraScript.gd" id="6_coqh1"]
+[ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="6_g8ysx"]
 [ext_resource type="PackedScene" uid="uid://gsgjnsn2aypm" path="res://Scenes/Player2.tscn" id="6_jhw8w"]
+[ext_resource type="PackedScene" uid="uid://c64awdyy3ynfc" path="res://Things/45_road.tscn" id="7_eh2un"]
 
 [node name="Base Test Scene" type="Node2D"]
 
@@ -18,8 +20,7 @@ unique_name_in_owner = true
 position = Vector2(0, -150)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2(3000, 0)
-zoom = Vector2(0.745, 0.745)
+offset = Vector2(0, -150)
 script = ExtResource("6_coqh1")
 
 [node name="Level" type="Node2D" parent="."]
@@ -42,3 +43,24 @@ rotation = 1.5708
 [node name="Barriers5" parent="Level" instance=ExtResource("3_68vrh")]
 position = Vector2(3679, 798)
 rotation = 1.5708
+
+[node name="Barriers6" parent="Level" instance=ExtResource("3_68vrh")]
+position = Vector2(3679, 1758)
+rotation = 1.5708
+
+[node name="Barriers7" parent="Level" instance=ExtResource("3_68vrh")]
+position = Vector2(3679, 2718)
+rotation = 1.5708
+
+[node name="Node2D" parent="Level" instance=ExtResource("6_g8ysx")]
+position = Vector2(3671, 3466)
+rotation = 3.14159
+scale = Vector2(-1, 1)
+
+[node name="45Road" parent="Level" instance=ExtResource("7_eh2un")]
+position = Vector2(4140, 3886)
+rotation = 0.785398
+
+[node name="45Road2" parent="Level" instance=ExtResource("7_eh2un")]
+position = Vector2(4978, 4724)
+rotation = 0.785398
