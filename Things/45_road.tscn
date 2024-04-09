@@ -30,10 +30,8 @@ texture = ExtResource("2_aa5jg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-9.00001, -551)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_qq7le")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(-8, 551)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_qq7le")

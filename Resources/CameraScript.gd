@@ -4,7 +4,7 @@ var target_node : Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	target_node = get_node("%Player 1")
+	target_node = get_node("%Player1")
 	pass # Replace with function body.
 
 

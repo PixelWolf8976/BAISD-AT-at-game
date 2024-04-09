@@ -15,13 +15,19 @@ metadata/_edit_horizontal_guides_ = [-583.0]
 unique_name_in_owner = true
 position = Vector2(0, 150)
 motion_mode = 1
+defaultMaxSpeed = 1000.0
+corneringMaxSpeed = 950.0
+acceleration = 400.0
 
 [node name="Player 2" parent="." instance=ExtResource("6_jhw8w")]
 unique_name_in_owner = true
 position = Vector2(0, -150)
+defaultMaxSpeed = 1000.0
+corneringMaxSpeed = 950.0
+acceleration = 400.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2(0, -150)
+zoom = Vector2(0.5, 0.5)
 script = ExtResource("6_coqh1")
 
 [node name="Level" type="Node2D" parent="."]
@@ -213,5 +219,10 @@ position = Vector2(-2839, 796)
 rotation = 1.5708
 
 [node name="Corner5" parent="Level" instance=ExtResource("4_f7uof")]
-position = Vector2(-2798, 1)
-scale = Vector2(1.25, 1)
+position = Vector2(-2782, 1)
+scale = Vector2(1.2, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Level"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/StaticBody2D"]
+polygon = PackedVector2Array(-2400, 300.025, -2400, 316, -2540, 316)
