@@ -1,9 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://loi804kpfwop"]
+[gd_scene load_steps=10 format=3 uid="uid://loi804kpfwop"]
 
 [ext_resource type="Script" path="res://Resources/splitscreen test.gd" id="1_kqktd"]
 [ext_resource type="Script" path="res://Resources/CameraScript.gd" id="2_xgshd"]
 [ext_resource type="PackedScene" uid="uid://baajkcg4mw3jk" path="res://Scenes/Player1.tscn" id="3_bf0t6"]
 [ext_resource type="PackedScene" uid="uid://gsgjnsn2aypm" path="res://Scenes/Player2.tscn" id="4_5vj0a"]
+[ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="5_ffsj4"]
+[ext_resource type="PackedScene" uid="uid://dm8f72kl05gg" path="res://Things/Corner.tscn" id="6_ys5q8"]
+[ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="7_02fmj"]
+[ext_resource type="PackedScene" uid="uid://c64awdyy3ynfc" path="res://Things/45_road.tscn" id="8_3t0eu"]
 [ext_resource type="Script" path="res://Resources/Camera2D2.gd" id="8_86p24"]
 
 [node name="Node" type="Node"]
@@ -28,16 +32,220 @@ size = Vector2i(958, 1080)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/Viewport1/SubViewport1"]
+zoom = Vector2(0.75, 0.75)
 script = ExtResource("2_xgshd")
 
 [node name="Player1" parent="HBoxContainer/Viewport1/SubViewport1" instance=ExtResource("3_bf0t6")]
 unique_name_in_owner = true
 position = Vector2(0, -50)
 motion_mode = 1
+defaultMaxSpeed = 1000.0
+corneringMaxSpeed = 950.0
+acceleration = 400.0
 
 [node name="Player2" parent="HBoxContainer/Viewport1/SubViewport1" instance=ExtResource("4_5vj0a")]
 unique_name_in_owner = true
 position = Vector2(0, -150)
+defaultMaxSpeed = 1000.0
+corneringMaxSpeed = 950.0
+acceleration = 400.0
+
+[node name="Level" type="Node2D" parent="HBoxContainer/Viewport1/SubViewport1"]
+
+[node name="Barriers" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+
+[node name="Barriers2" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(960, 0)
+
+[node name="Barriers3" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(1920, 0)
+
+[node name="Barriers4" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(2880, 0)
+
+[node name="Corner" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("6_ys5q8")]
+position = Vector2(3678, 0)
+rotation = 1.5708
+
+[node name="Barriers5" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(3679, 798)
+rotation = 1.5708
+
+[node name="Barriers6" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(3679, 1758)
+rotation = 1.5708
+
+[node name="Barriers7" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(3679, 2718)
+rotation = 1.5708
+
+[node name="Node2D" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("7_02fmj")]
+position = Vector2(3671, 3466)
+rotation = 3.14159
+scale = Vector2(-1, 1)
+
+[node name="45Road" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("8_3t0eu")]
+position = Vector2(4140, 3886)
+rotation = 0.785398
+
+[node name="45Road2" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("8_3t0eu")]
+position = Vector2(4978, 4724)
+rotation = 0.785398
+
+[node name="45Road3" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("8_3t0eu")]
+position = Vector2(5816, 5562)
+rotation = 0.785398
+
+[node name="Node2D2" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("7_02fmj")]
+position = Vector2(8741, 8533)
+rotation = -1.5708
+
+[node name="Barriers8" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(9486, 8525)
+
+[node name="Barriers9" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(10446, 8525)
+
+[node name="Corner2" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("6_ys5q8")]
+position = Vector2(11244, 8525)
+rotation = 1.5708
+
+[node name="Barriers10" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(11245, 9323)
+rotation = 1.5708
+
+[node name="Barriers11" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(11245, 10283)
+rotation = 1.5708
+
+[node name="Barriers12" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(11245, 11243)
+rotation = 1.5708
+
+[node name="Corner3" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("6_ys5q8")]
+position = Vector2(11245, 12041)
+rotation = 3.14159
+
+[node name="Barriers13" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(7567, 12041)
+
+[node name="Barriers14" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(8527, 12041)
+
+[node name="Barriers15" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(9487, 12041)
+
+[node name="Barriers16" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(10447, 12041)
+
+[node name="Barriers17" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(3727, 12041)
+
+[node name="Barriers18" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(4687, 12041)
+
+[node name="Barriers19" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(5647, 12041)
+
+[node name="Barriers20" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(6607, 12041)
+
+[node name="Barriers21" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-113, 12041)
+
+[node name="Barriers22" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(847, 12041)
+
+[node name="Barriers23" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(1807, 12041)
+
+[node name="Barriers24" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(2767, 12041)
+
+[node name="Barriers27" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2033, 12041)
+
+[node name="Barriers28" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-1073, 12041)
+
+[node name="Corner4" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("6_ys5q8")]
+position = Vector2(-2831, 12042)
+rotation = 4.71239
+
+[node name="Barriers25" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 9324)
+rotation = 1.5708
+
+[node name="Barriers26" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 10284)
+rotation = 1.5708
+
+[node name="Barriers29" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 11244)
+rotation = 1.5708
+
+[node name="Barriers30" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 6444)
+rotation = 1.5708
+
+[node name="Barriers31" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 7404)
+rotation = 1.5708
+
+[node name="Barriers32" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 8364)
+rotation = 1.5708
+
+[node name="Barriers33" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 3564)
+rotation = 1.5708
+
+[node name="Barriers34" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 4524)
+rotation = 1.5708
+
+[node name="Barriers35" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 5484)
+rotation = 1.5708
+
+[node name="Barriers38" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 2604)
+rotation = 1.5708
+
+[node name="Barriers41" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-1920, 0)
+
+[node name="Barriers42" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-960, 0)
+
+[node name="45Road4" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("8_3t0eu")]
+position = Vector2(6654, 6400)
+rotation = 0.785398
+
+[node name="45Road5" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("8_3t0eu")]
+position = Vector2(7492, 7238)
+rotation = 0.785398
+
+[node name="45Road6" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("8_3t0eu")]
+position = Vector2(8330, 8076)
+rotation = 0.785398
+
+[node name="Barriers39" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2831, 1644)
+rotation = 1.5708
+
+[node name="Barriers40" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
+position = Vector2(-2839, 796)
+rotation = 1.5708
+
+[node name="Corner5" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("6_ys5q8")]
+position = Vector2(-2782, 1)
+scale = Vector2(1.2, 1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="HBoxContainer/Viewport1/SubViewport1/Level"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HBoxContainer/Viewport1/SubViewport1/Level/StaticBody2D"]
+polygon = PackedVector2Array(-2400, 300.025, -2400, 316, -2540, 316)
 
 [node name="Viewport2" type="SubViewportContainer" parent="HBoxContainer"]
 layout_mode = 2
@@ -50,4 +258,5 @@ size = Vector2i(958, 1080)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/Viewport2/SubViewport2"]
+zoom = Vector2(0.75, 0.75)
 script = ExtResource("8_86p24")
