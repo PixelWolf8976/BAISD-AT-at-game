@@ -1,0 +1,97 @@
+[gd_scene load_steps=4 format=3 uid="uid://cia0p7encwxn6"]
+
+[ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="1_uiekv"]
+[ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="2_1d7al"]
+[ext_resource type="PackedScene" uid="uid://c64awdyy3ynfc" path="res://Things/45_road.tscn" id="3_43pie"]
+
+[node name="Level" type="Node2D"]
+
+[node name="Barriers" parent="." instance=ExtResource("1_uiekv")]
+
+[node name="Barriers2" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(960, 0)
+
+[node name="Barriers3" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(1920, 0)
+
+[node name="Barriers4" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(2880, 0)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(3628, 8)
+rotation = 1.5708
+scale = Vector2(-1, 1)
+
+[node name="45Road" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(4049, -461)
+rotation = -0.785398
+
+[node name="45Road2" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(4887, -1299)
+rotation = -0.785398
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(5304, -1764)
+rotation = -1.5708
+scale = Vector2(-1, 1)
+
+[node name="Barriers5" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(6052, -1757)
+
+[node name="Barriers6" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(7012, -1757)
+
+[node name="Barriers7" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(7972, -1757)
+
+[node name="Barriers8" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(8932, -1757)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(9680, -1764)
+rotation = 1.5708
+
+[node name="45Road3" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(10088, -1307)
+rotation = -2.35619
+
+[node name="45Road4" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(10926, -469)
+rotation = -2.35619
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(11396, -48)
+rotation = 3.14159
+scale = Vector2(1, -1)
+
+[node name="Barriers9" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(11389, 700)
+rotation = 1.5708
+
+[node name="Barriers10" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(11389, 3580)
+rotation = 1.5708
+
+[node name="Barriers11" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(11389, 2620)
+rotation = 1.5708
+
+[node name="Barriers12" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(11389, 1660)
+rotation = 1.5708
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(11396, 4328)
+scale = Vector2(-1, -1)
+
+[node name="45Road5" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(10101, 5574)
+rotation = -0.785398
+
+[node name="45Road6" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(10939, 4736)
+rotation = -0.785398
+
+[node name="45Road7" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(9263, 6412)
+rotation = -0.785398
