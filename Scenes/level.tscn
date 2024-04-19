@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cia0p7encwxn6"]
+[gd_scene load_steps=6 format=3 uid="uid://cia0p7encwxn6"]
 
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="1_uiekv"]
 [ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="2_1d7al"]
 [ext_resource type="PackedScene" uid="uid://c64awdyy3ynfc" path="res://Things/45_road.tscn" id="3_43pie"]
+[ext_resource type="PackedScene" uid="uid://dm8f72kl05gg" path="res://Things/Corner.tscn" id="4_bym4l"]
+[ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/barrier.tscn" id="5_exocw"]
 
 [node name="Level" type="Node2D"]
 
@@ -95,3 +97,191 @@ rotation = -0.785398
 [node name="45Road7" parent="." instance=ExtResource("3_43pie")]
 position = Vector2(9263, 6412)
 rotation = -0.785398
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(8834, 6883)
+rotation = 4.71239
+scale = Vector2(1, -1)
+
+[node name="Barriers13" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(8086, 6875)
+
+[node name="Barriers14" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(7126, 6875)
+
+[node name="Barriers15" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(6166, 6875)
+
+[node name="Barriers16" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(5206, 6875)
+
+[node name="Barriers17" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(3286, 6875)
+
+[node name="Barriers18" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(4246, 6875)
+
+[node name="Barriers19" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(2326, 6875)
+
+[node name="Barriers20" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(1366, 6875)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(618, 6883)
+rotation = 4.71239
+
+[node name="45Road8" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(198, 6414)
+rotation = -2.35619
+
+[node name="45Road9" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(-640, 5576)
+rotation = -2.35619
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(-1101, 5164)
+rotation = 3.14159
+scale = Vector2(-1, 1)
+
+[node name="Barriers21" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-1090, 4419)
+rotation = 1.5708
+
+[node name="Barriers22" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-1090, 3459)
+rotation = 1.5708
+
+[node name="Corner" parent="." instance=ExtResource("4_bym4l")]
+position = Vector2(-1091, 2661)
+
+[node name="Barriers23" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-293, 2660)
+
+[node name="Barriers24" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(667, 2660)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(1415, 2653)
+rotation = 1.5708
+
+[node name="45Road10" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(2661, 3948)
+rotation = -2.35619
+
+[node name="45Road11" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(1823, 3110)
+rotation = -2.35619
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(3123, 4384)
+scale = Vector2(-1, 1)
+
+[node name="Barriers25" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(3116, 6092)
+rotation = 1.5708
+
+[node name="Barriers26" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(3116, 5132)
+rotation = 1.5708
+
+[node name="Barriers27" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(3116, 7052)
+rotation = 1.5708
+
+[node name="Barriers28" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(3116, 8012)
+rotation = 1.5708
+
+[node name="Corner2" parent="." instance=ExtResource("4_bym4l")]
+position = Vector2(3116, 8810)
+rotation = 3.14159
+
+[node name="Barriers29" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(398, 8810)
+
+[node name="Barriers30" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(2318, 8810)
+
+[node name="Barriers31" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(1358, 8810)
+
+[node name="Barriers32" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-2482, 8810)
+
+[node name="Barriers33" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-562, 8810)
+
+[node name="Barriers34" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-1522, 8810)
+
+[node name="Barriers35" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-1920, 0)
+
+[node name="Barriers36" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-960, 0)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("5_exocw")]
+position = Vector2(-335, -1)
+
+[node name="45Road12" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(-4476, 10104)
+rotation = -0.785398
+
+[node name="45Road13" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(-3639, 9261)
+rotation = -0.785398
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(-9284, 10570)
+rotation = -1.5708
+
+[node name="Barriers37" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-8536, 10562)
+
+[node name="Barriers38" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-7576, 10562)
+
+[node name="Barriers39" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-6616, 10562)
+
+[node name="Barriers40" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-5656, 10562)
+
+[node name="StaticBody2D13" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(-4908, 10570)
+rotation = 1.5708
+scale = Vector2(-1, 1)
+
+[node name="45Road14" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(-10542, 9263)
+rotation = -2.35619
+
+[node name="45Road15" parent="." instance=ExtResource("3_43pie")]
+position = Vector2(-9704, 10101)
+rotation = -2.35619
+
+[node name="StaticBody2D14" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(-3230, 8803)
+rotation = -1.5708
+scale = Vector2(-1, 1)
+
+[node name="StaticBody2D15" parent="." instance=ExtResource("2_1d7al")]
+position = Vector2(-10997, 8834)
+scale = Vector2(1, -1)
+
+[node name="Barriers41" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-10989, 5206)
+rotation = 1.5708
+
+[node name="Barriers42" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-10989, 8086)
+rotation = 1.5708
+
+[node name="Barriers43" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-10989, 7126)
+rotation = 1.5708
+
+[node name="Barriers44" parent="." instance=ExtResource("1_uiekv")]
+position = Vector2(-10989, 6166)
+rotation = 1.5708
