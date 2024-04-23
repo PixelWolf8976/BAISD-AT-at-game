@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://loi804kpfwop"]
+[gd_scene load_steps=11 format=3 uid="uid://loi804kpfwop"]
 
 [ext_resource type="Script" path="res://Resources/splitscreen test.gd" id="1_kqktd"]
 [ext_resource type="Script" path="res://Resources/CameraScript.gd" id="2_xgshd"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="7_02fmj"]
 [ext_resource type="PackedScene" uid="uid://c64awdyy3ynfc" path="res://Things/45_road.tscn" id="8_3t0eu"]
 [ext_resource type="Script" path="res://Resources/Camera2D2.gd" id="8_86p24"]
+[ext_resource type="PackedScene" uid="uid://e7f7axr3c4va" path="res://Things/overpass.tscn" id="9_4i2x7"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_kqktd")
@@ -28,7 +29,7 @@ stretch = true
 
 [node name="SubViewport1" type="SubViewport" parent="HBoxContainer/Viewport1"]
 handle_input_locally = false
-size = Vector2i(2, 2)
+size = Vector2i(958, 1080)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/Viewport1/SubViewport1"]
@@ -64,7 +65,7 @@ position = Vector2(1920, 0)
 position = Vector2(2880, 0)
 
 [node name="Corner" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("6_ys5q8")]
-position = Vector2(3678, 0)
+position = Vector2(3678, -200)
 rotation = 1.5708
 
 [node name="Barriers5" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("5_ffsj4")]
@@ -247,6 +248,9 @@ scale = Vector2(1.2, 1)
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HBoxContainer/Viewport1/SubViewport1/Level/StaticBody2D"]
 polygon = PackedVector2Array(-2400, 300.025, -2400, 316, -2540, 316)
 
+[node name="Overpass" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("9_4i2x7")]
+position = Vector2(4000, 0)
+
 [node name="Viewport2" type="SubViewportContainer" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -254,7 +258,7 @@ stretch = true
 
 [node name="SubViewport2" type="SubViewport" parent="HBoxContainer/Viewport2"]
 handle_input_locally = false
-size = Vector2i(2, 2)
+size = Vector2i(958, 1080)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/Viewport2/SubViewport2"]

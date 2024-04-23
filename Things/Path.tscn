@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cycx54k60s5it"]
+[gd_scene load_steps=4 format=3 uid="uid://cycx54k60s5it"]
 
-[ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/Barrier.tscn" id="1_nmdvo"]
+[ext_resource type="Script" path="res://Resources/PathScript.gd" id="1_mdyco"]
+[ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/barrier.tscn" id="1_nmdvo"]
 [ext_resource type="Texture2D" uid="uid://bg6clf8b37im3" path="res://Resources/straight foad.png" id="1_uq62d"]
 
 [node name="Barriers" type="Node2D"]
+script = ExtResource("1_mdyco")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -2
