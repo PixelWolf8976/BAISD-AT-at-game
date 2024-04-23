@@ -322,3 +322,15 @@ position = Vector2(-4800, 0)
 [node name="45Road23" parent="." instance=ExtResource("3_yudh2")]
 position = Vector2(-6357, -445)
 rotation = 0.785398
+
+[node name="StaticBody2D15" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D15"]
+position = Vector2(-5724.19, -84.3656)
+scale = Vector2(0.364773, 4.5824)
+polygon = PackedVector2Array(-895.935, -116.453, 118.394, -45.9659, -830.142, -121.69)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D15"]
+position = Vector2(-5724.19, -84.3656)
+scale = Vector2(0.364773, 4.5824)
+polygon = PackedVector2Array(-3886.83, -124.964, -3686.71, -108.815, -3620.92, -114.052)
