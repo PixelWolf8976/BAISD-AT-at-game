@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cia0p7encwxn6"]
+[gd_scene load_steps=7 format=3 uid="uid://cia0p7encwxn6"]
 
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="1_s6rg4"]
 [ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="2_2wxdp"]
 [ext_resource type="PackedScene" uid="uid://c64awdyy3ynfc" path="res://Things/45_road.tscn" id="3_ghtrx"]
 [ext_resource type="PackedScene" uid="uid://dm8f72kl05gg" path="res://Things/Corner.tscn" id="4_2vf3j"]
 [ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/barrier.tscn" id="5_2se5v"]
+[ext_resource type="Texture2D" uid="uid://cv2bxvxpklc6y" path="res://Resources/Corncer tires.png" id="6_h7b70"]
 
 [node name="Track 1" type="Node2D"]
 
@@ -329,3 +330,8 @@ position = Vector2(-6655, 1)
 [node name="Barriers50" parent="." instance=ExtResource("1_s6rg4")]
 position = Vector2(-7434, 780)
 rotation = 1.5708
+
+[node name="CorncerTires" type="Sprite2D" parent="."]
+position = Vector2(-321691, -152851)
+scale = Vector2(1000, 474.2)
+texture = ExtResource("6_h7b70")
