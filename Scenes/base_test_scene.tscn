@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c8kjijcmsnr0y"]
+[gd_scene load_steps=9 format=3 uid="uid://c8kjijcmsnr0y"]
 
 [ext_resource type="PackedScene" uid="uid://baajkcg4mw3jk" path="res://Scenes/Player1.tscn" id="1_g2chq"]
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="3_68vrh"]
@@ -8,10 +8,13 @@
 [ext_resource type="PackedScene" uid="uid://gsgjnsn2aypm" path="res://Scenes/Player2.tscn" id="6_jhw8w"]
 [ext_resource type="PackedScene" uid="uid://c64awdyy3ynfc" path="res://Things/45_road.tscn" id="7_eh2un"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qbo44"]
+size = Vector2(20, 599)
+
 [node name="Base Test Scene" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [-583.0]
 
-[node name="Player 1" parent="." instance=ExtResource("1_g2chq")]
+[node name="Player1" parent="." instance=ExtResource("1_g2chq")]
 unique_name_in_owner = true
 position = Vector2(0, 150)
 motion_mode = 1
@@ -44,7 +47,7 @@ position = Vector2(1920, 0)
 position = Vector2(2880, 0)
 
 [node name="Corner" parent="Level" instance=ExtResource("4_f7uof")]
-position = Vector2(3678, 0)
+position = Vector2(2389, 1827)
 rotation = 1.5708
 
 [node name="Barriers5" parent="Level" instance=ExtResource("3_68vrh")]
@@ -226,3 +229,51 @@ scale = Vector2(1.2, 1)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Level/StaticBody2D"]
 polygon = PackedVector2Array(-2400, 300.025, -2400, 316, -2540, 316)
+
+[node name="Barriers36" parent="Level" instance=ExtResource("3_68vrh")]
+z_index = 10
+position = Vector2(5745, -627)
+colLay = 3
+
+[node name="Barriers37" parent="Level" instance=ExtResource("3_68vrh")]
+z_index = 10
+position = Vector2(7665, -627)
+colLay = 2
+
+[node name="Barriers43" parent="Level" instance=ExtResource("3_68vrh")]
+z_index = 10
+position = Vector2(4785, -627)
+colLay = 2
+
+[node name="Barriers44" parent="Level" instance=ExtResource("3_68vrh")]
+z_index = 10
+position = Vector2(6705, -627)
+colLay = 3
+
+[node name="Leave Overpass" type="Area2D" parent="Level"]
+position = Vector2(5745, -627)
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Leave Overpass"]
+z_index = 100
+position = Vector2(-1430, 0)
+shape = SubResource("RectangleShape2D_qbo44")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Level/Leave Overpass"]
+z_index = 100
+position = Vector2(2390, 0)
+shape = SubResource("RectangleShape2D_qbo44")
+
+[node name="Enter Overpass" type="Area2D" parent="Level"]
+position = Vector2(5745, -627)
+collision_layer = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Enter Overpass"]
+z_index = 100
+position = Vector2(-490, 0)
+shape = SubResource("RectangleShape2D_qbo44")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Level/Enter Overpass"]
+z_index = 100
+position = Vector2(1450, 0)
+shape = SubResource("RectangleShape2D_qbo44")

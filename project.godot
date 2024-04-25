@@ -50,6 +50,14 @@ turn_right_2={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Walls"
+2d_physics/layer_2="over transition"
+2d_physics/layer_3="Overpass"
+2d_physics/layer_4="off overpass"
+2d_physics/layer_5="on overpass"
+
 [rendering]
 
 renderer/rendering_method="mobile"

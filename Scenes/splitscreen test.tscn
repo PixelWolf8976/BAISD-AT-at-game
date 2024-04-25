@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="7_02fmj"]
 [ext_resource type="PackedScene" uid="uid://c64awdyy3ynfc" path="res://Things/45_road.tscn" id="8_3t0eu"]
 [ext_resource type="Script" path="res://Resources/Camera2D2.gd" id="8_86p24"]
-[ext_resource type="PackedScene" uid="uid://e7f7axr3c4va" path="res://Things/overpass.tscn" id="9_4i2x7"]
+[ext_resource type="PackedScene" uid="uid://cywob5wyb7qas" path="res://Things/overpass.tscn" id="9_4i2x7"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_kqktd")
@@ -243,13 +243,13 @@ rotation = 1.5708
 position = Vector2(-2782, 1)
 scale = Vector2(1.2, 1)
 
+[node name="Overpass" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("9_4i2x7")]
+position = Vector2(500, 212.785)
+
 [node name="StaticBody2D" type="StaticBody2D" parent="HBoxContainer/Viewport1/SubViewport1/Level"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HBoxContainer/Viewport1/SubViewport1/Level/StaticBody2D"]
 polygon = PackedVector2Array(-2400, 300.025, -2400, 316, -2540, 316)
-
-[node name="Overpass" parent="HBoxContainer/Viewport1/SubViewport1/Level" instance=ExtResource("9_4i2x7")]
-position = Vector2(4000, 0)
 
 [node name="Viewport2" type="SubViewportContainer" parent="HBoxContainer"]
 layout_mode = 2
