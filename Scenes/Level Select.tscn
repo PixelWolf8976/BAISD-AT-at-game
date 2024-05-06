@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://bb7832r2ujysd"]
+
+[ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_m0unk"]
+[ext_resource type="Texture2D" uid="uid://dqvv3uaqbdb5u" path="res://Resources/Menu Text.png" id="2_awn1x"]
+
+[node name="Track Selector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_m0unk")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 834.0
+offset_top = 41.0
+offset_right = -589.0
+offset_bottom = -893.0
+texture = ExtResource("2_awn1x")
+expand_mode = 1

@@ -1,15 +1,70 @@
-[gd_scene load_steps=2 format=3 uid="uid://d23w5n08u40kt"]
+[gd_scene load_steps=6 format=3 uid="uid://d23w5n08u40kt"]
 
-[ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_h4gi7"]
+[ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_ivdcn"]
+[ext_resource type="Script" path="res://Scenes/main_menu_script.gd" id="1_rog67"]
+[ext_resource type="Texture2D" uid="uid://dqvv3uaqbdb5u" path="res://Resources/Menu Text.png" id="2_vqxyk"]
+[ext_resource type="Texture2D" uid="uid://mcpcx04nsj1y" path="res://Resources/Play.png" id="3_em3px"]
+[ext_resource type="Texture2D" uid="uid://dv14g7muwaajj" path="res://Resources/Quit.png" id="4_1mwtj"]
 
-[node name="Main menu" type="Control"]
+[node name="Main Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_rog67")
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(960, 540)
-texture = ExtResource("1_h4gi7")
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("1_ivdcn")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 834.0
+offset_top = 41.0
+offset_right = -589.0
+offset_bottom = -893.0
+texture = ExtResource("2_vqxyk")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 877.0
+offset_top = 351.0
+offset_right = -819.0
+offset_bottom = -638.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("3_em3px")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 876.0
+offset_top = 472.0
+offset_right = -820.0
+offset_bottom = -517.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("4_1mwtj")
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
