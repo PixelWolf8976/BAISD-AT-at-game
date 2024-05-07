@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bb7832r2ujysd"]
 
 [ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_m0unk"]
-[ext_resource type="Texture2D" uid="uid://dqvv3uaqbdb5u" path="res://Resources/Menu Text.png" id="2_awn1x"]
+[ext_resource type="Texture2D" uid="uid://ddvry1dxl7q8o" path="res://Resources/Level Select.png" id="2_qmq0w"]
 
 [node name="Track Selector" type="Control"]
 layout_mode = 3
@@ -22,9 +22,11 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 834.0
+offset_left = 823.0
 offset_top = 41.0
-offset_right = -589.0
+offset_right = -532.0
 offset_bottom = -893.0
-texture = ExtResource("2_awn1x")
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_qmq0w")
 expand_mode = 1
