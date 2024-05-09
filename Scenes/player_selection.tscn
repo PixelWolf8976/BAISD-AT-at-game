@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=3 uid="uid://dprix7j7m168u"]
+
+[ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_2k6fn"]
+[ext_resource type="Texture2D" uid="uid://cdtyx2hcjgkrk" path="res://Resources/Player Selection.png" id="2_0skuc"]
+[ext_resource type="Texture2D" uid="uid://bqq55d3stn6o5" path="res://Resources/Two Player.png" id="3_w1jr5"]
+[ext_resource type="Texture2D" uid="uid://c3itk3ab6e5rg" path="res://Resources/Singleplayer.png" id="4_x4cyk"]
+
+[node name="Player selection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_2k6fn")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 776.0
+offset_top = 41.0
+offset_right = -480.0
+offset_bottom = -893.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_0skuc")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1116.0
+offset_top = 344.0
+offset_right = -580.0
+offset_bottom = -645.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("3_w1jr5")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 865.0
+offset_top = 344.0
+offset_right = -831.0
+offset_bottom = -645.0
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("4_x4cyk")
+icon_alignment = 1
+expand_icon = true
