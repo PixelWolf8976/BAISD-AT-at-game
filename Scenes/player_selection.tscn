@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dprix7j7m168u"]
+[gd_scene load_steps=6 format=3 uid="uid://dprix7j7m168u"]
 
 [ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_2k6fn"]
+[ext_resource type="Script" path="res://Resources/player_selection.gd" id="1_5aa0l"]
 [ext_resource type="Texture2D" uid="uid://cdtyx2hcjgkrk" path="res://Resources/Player Selection.png" id="2_0skuc"]
 [ext_resource type="Texture2D" uid="uid://bqq55d3stn6o5" path="res://Resources/Two Player.png" id="3_w1jr5"]
 [ext_resource type="Texture2D" uid="uid://c3itk3ab6e5rg" path="res://Resources/Singleplayer.png" id="4_x4cyk"]
@@ -12,8 +13,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_5aa0l")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_2k6fn")
@@ -61,3 +64,6 @@ grow_vertical = 2
 icon = ExtResource("4_x4cyk")
 icon_alignment = 1
 expand_icon = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
