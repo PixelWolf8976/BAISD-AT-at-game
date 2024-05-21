@@ -1,0 +1,13 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://m4esxg8uqc8u"]
+
+[ext_resource type="Texture2D" uid="uid://wjbq0jxp0rgg" path="res://Resources/watergrass.png" id="1_rtxi6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ialx8"]
+texture = ExtResource("1_rtxi6")
+texture_region_size = Vector2i(474, 474)
+0:0/0 = 0
+0:1/0 = 0
+
+[resource]
+tile_size = Vector2i(474, 474)
+sources/4 = SubResource("TileSetAtlasSource_ialx8")
