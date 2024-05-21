@@ -13,13 +13,13 @@ var currentTopSpeed = currentMaxSpeed
 var speed = 0.0
 
 func _physics_process(delta):
-	if rayForOverpass.is_colliding():
-		if rayForOverpass.get_collision_mask_value(4):
-			0b00000000_00000000_00000000_00000011
-			self.visibility_layer = 0
-		elif rayForOverpass.get_collision_mask_value(5):
-			0b00000000_00000000_00000000_00000110
-			self.visibility_layer = 10
+	#if rayForOverpass.is_colliding():
+	#	if rayForOverpass.get_collision_mask_value(4):
+	#		0b00000000_00000000_00000000_00000011
+	#		self.visibility_layer = 0
+	#	elif rayForOverpass.get_collision_mask_value(5):
+	#		0b00000000_00000000_00000000_00000110
+	#		self.visibility_layer = 10
 	
 	#4 is leave, 5 is enter
 	
