@@ -28,12 +28,15 @@ func _on_button_pressed():
 
 
 func _on_level_1_button_pressed():
-	print(1, " Pressed")
+	Global.setLevel(1)
+	get_tree().change_scene_to_file("res://Scenes/splitscreen test.tscn")
 
 
 func _on_level_2_button_pressed():
-	print(2, " Pressed")
+	Global.setLevel(2)
+	get_tree().change_scene_to_file("res://Scenes/splitscreen test.tscn")
 
 
 func _on_level_3_button_pressed():
-	print(3, " Pressed")
+	Global.setLevel(3)
+	get_tree().change_scene_to_file("res://Scenes/splitscreen test.tscn")
