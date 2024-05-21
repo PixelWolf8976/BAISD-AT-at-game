@@ -7,3 +7,4 @@ func _ready():
 	var camera2 = $HBoxContainer/Viewport2/SubViewport2/Camera2D
 	var world = $HBoxContainer/Viewport1/SubViewport1/Level
 	viewport2.world_2d = viewport1.world_2d
+
