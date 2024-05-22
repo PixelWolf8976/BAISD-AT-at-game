@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://loi804kpfwop"]
 
-[ext_resource type="Script" path="res://Resources/splitscreen test.gd" id="1_kqktd"]
+[ext_resource type="Script" path="res://Resources/splitscreen.gd" id="1_kqktd"]
 [ext_resource type="Script" path="res://Resources/CameraScript.gd" id="2_xgshd"]
 [ext_resource type="PackedScene" uid="uid://baajkcg4mw3jk" path="res://Scenes/Player1.tscn" id="3_bf0t6"]
 [ext_resource type="PackedScene" uid="uid://gsgjnsn2aypm" path="res://Scenes/Player2.tscn" id="4_5vj0a"]
@@ -24,7 +24,7 @@ stretch = true
 
 [node name="SubViewport1" type="SubViewport" parent="HBoxContainer/Viewport1"]
 handle_input_locally = false
-size = Vector2i(2, 2)
+size = Vector2i(958, 1080)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/Viewport1/SubViewport1"]
@@ -53,7 +53,7 @@ stretch = true
 
 [node name="SubViewport2" type="SubViewport" parent="HBoxContainer/Viewport2"]
 handle_input_locally = false
-size = Vector2i(2, 2)
+size = Vector2i(958, 1080)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/Viewport2/SubViewport2"]

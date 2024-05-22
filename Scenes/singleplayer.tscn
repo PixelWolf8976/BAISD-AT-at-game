@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://1cmykcyaouu5"]
+
+[ext_resource type="Script" path="res://Resources/CameraScript.gd" id="1_17f12"]
+[ext_resource type="PackedScene" uid="uid://baajkcg4mw3jk" path="res://Scenes/Player1.tscn" id="2_2eufu"]
+
+[node name="Singleplayer" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.75, 0.75)
+script = ExtResource("1_17f12")
+
+[node name="Player1" parent="." instance=ExtResource("2_2eufu")]
+unique_name_in_owner = true
+motion_mode = 1
+defaultMaxSpeed = 1000.0
+corneringMaxSpeed = 950.0
+acceleration = 400.0
