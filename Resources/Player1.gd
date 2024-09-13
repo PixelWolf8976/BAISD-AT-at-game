@@ -11,7 +11,6 @@ var currentTopSpeed = currentMaxSpeed
 var speed = 0.0
 
 func _physics_process(delta):
-	
 	if speed < currentTopSpeed:
 		speed += acceleration * delta
 		if speed > currentTopSpeed:

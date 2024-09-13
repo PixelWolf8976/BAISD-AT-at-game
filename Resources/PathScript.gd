@@ -7,5 +7,5 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	bar1.set_collision_layer(colLay)
-	bar2.set_collision_layer(colLay)
+	bar1.collision_layer = 1 << colLay | 1 << 0
+	bar2.collision_layer = 1 << colLay | 1 << 0

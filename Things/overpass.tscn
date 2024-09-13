@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cywob5wyb7qas"]
+[gd_scene load_steps=5 format=3 uid="uid://cywob5wyb7qas"]
 
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="1_68n66"]
+[ext_resource type="Script" path="res://Things/leave_overpass.gd" id="2_7cx5w"]
+[ext_resource type="Script" path="res://Things/enter_overpass.gd" id="3_oywjw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjjt4"]
 size = Vector2(20, 599)
@@ -12,14 +14,12 @@ z_index = 10
 colLay = 3
 
 [node name="Barriers2" parent="." instance=ExtResource("1_68n66")]
-z_index = 10
 position = Vector2(1920, 0)
-colLay = 2
+colLay = 5
 
 [node name="Barriers3" parent="." instance=ExtResource("1_68n66")]
-z_index = 10
 position = Vector2(-960, 0)
-colLay = 2
+colLay = 5
 
 [node name="Barriers4" parent="." instance=ExtResource("1_68n66")]
 z_index = 10
@@ -27,7 +27,9 @@ position = Vector2(960, 0)
 colLay = 3
 
 [node name="Leave Overpass" type="Area2D" parent="."]
-collision_layer = 8
+collision_layer = 31
+collision_mask = 31
+script = ExtResource("2_7cx5w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Leave Overpass"]
 z_index = 100
@@ -40,7 +42,9 @@ position = Vector2(2390, 0)
 shape = SubResource("RectangleShape2D_rjjt4")
 
 [node name="Enter Overpass" type="Area2D" parent="."]
-collision_layer = 16
+collision_layer = 31
+collision_mask = 31
+script = ExtResource("3_oywjw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enter Overpass"]
 z_index = 100
@@ -51,3 +55,6 @@ shape = SubResource("RectangleShape2D_rjjt4")
 z_index = 100
 position = Vector2(1450, 0)
 shape = SubResource("RectangleShape2D_rjjt4")
+
+[connection signal="body_entered" from="Leave Overpass" to="Leave Overpass" method="_on_body_entered"]
+[connection signal="body_entered" from="Enter Overpass" to="Enter Overpass" method="_on_body_entered"]
