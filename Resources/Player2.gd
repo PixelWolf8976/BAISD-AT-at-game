@@ -10,6 +10,11 @@ var currentMaxSpeed = defaultMaxSpeed
 var currentTopSpeed = currentMaxSpeed
 var speed = 0.0
 
+func _ready():
+	if Global.playerCount == 1:
+		get_parent().get_parent().get_parent().get_node("Viewport2").queue_free()
+		queue_free()
+
 func _physics_process(delta):
 	
 	if speed < currentTopSpeed:

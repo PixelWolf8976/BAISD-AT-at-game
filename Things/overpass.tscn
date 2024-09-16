@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://cywob5wyb7qas"]
 
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="1_68n66"]
-[ext_resource type="Script" path="res://Things/leave_overpass.gd" id="2_7cx5w"]
-[ext_resource type="Script" path="res://Things/enter_overpass.gd" id="3_oywjw"]
+[ext_resource type="Script" path="res://Resources/leave_overpass.gd" id="2_7cx5w"]
+[ext_resource type="Script" path="res://Resources/enter_overpass.gd" id="3_oywjw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjjt4"]
 size = Vector2(20, 599)
