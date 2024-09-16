@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://c3y0ckuevbl3t"]
+
+[node name="Stopwatch UI" type="CanvasLayer"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
