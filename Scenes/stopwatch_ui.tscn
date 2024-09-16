@@ -1,7 +1,16 @@
-[gd_scene format=3 uid="uid://c3y0ckuevbl3t"]
+[gd_scene load_steps=3 format=3 uid="uid://c3y0ckuevbl3t"]
+
+[ext_resource type="Script" path="res://Scenes/stopwatch_ui.gd" id="1_cidmn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dwvjg"]
+font_size = 60
 
 [node name="Stopwatch UI" type="CanvasLayer"]
+script = ExtResource("1_cidmn")
 
 [node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+text = "Time"
+label_settings = SubResource("LabelSettings_dwvjg")
+horizontal_alignment = 1
