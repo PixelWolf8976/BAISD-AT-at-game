@@ -9,6 +9,7 @@ extends CharacterBody2D
 var currentMaxSpeed = defaultMaxSpeed
 var currentTopSpeed = currentMaxSpeed
 var speed = 0.0
+var reachedCheckpoint := false
 
 func _ready():
 	if Global.playerCount == 1:
@@ -37,8 +38,6 @@ func _physics_process(delta):
 		rotation += rotationSpeed * delta
 	else:
 		currentMaxSpeed = defaultMaxSpeed
-	
-	
 	
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed

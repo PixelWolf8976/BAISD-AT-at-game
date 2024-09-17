@@ -7,7 +7,12 @@ var stopwatchRunning := true
 func _process(delta: float) -> void:
 	if stopwatchRunning:
 		elapsedTime += delta
-		$Label.text = str(round(elapsedTime * 1000.0) / 1000.0)
+		var out := str(round(elapsedTime * 1000.0) / 1000.0)
+		var splitStr = out.split(".")
+		if splitStr.size() > 1:
+			for i in range(3 - splitStr[1].length()):
+				out += "0"
+		$Label.text = out
 
 func startStopwatch():
 	stopwatchRunning = true
