@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=11 format=3 uid="uid://bket3sagky7av"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://bket3sagky7av"]
+>>>>>>> Stashed changes
 
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="1_pfmxn"]
 [ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="2_oa7yq"]
@@ -7,7 +11,11 @@
 [ext_resource type="TileSet" uid="uid://m4esxg8uqc8u" path="res://Resources/background.tres" id="5_6bwym"]
 [ext_resource type="PackedScene" uid="uid://cywob5wyb7qas" path="res://Things/overpass.tscn" id="6_6qns3"]
 [ext_resource type="Script" path="res://Scenes/area_2d.gd" id="7_djers"]
+<<<<<<< Updated upstream
 [ext_resource type="Script" path="res://Scenes/area_2d_2.gd" id="8_x4fcq"]
+=======
+[ext_resource type="Texture2D" uid="uid://w2twwmhb2100" path="res://Resources/pixil-frame-0.png" id="8_bnh38"]
+>>>>>>> Stashed changes
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bn4n4"]
 size = Vector2(154, 597)
@@ -352,6 +360,7 @@ script = ExtResource("7_djers")
 position = Vector2(-67, 1.5)
 shape = SubResource("RectangleShape2D_bn4n4")
 
+<<<<<<< Updated upstream
 [node name="Area2D2" type="Area2D" parent="."]
 position = Vector2(-335, -1)
 collision_layer = 3
@@ -361,6 +370,13 @@ script = ExtResource("8_x4fcq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(-81, 5631)
 shape = SubResource("RectangleShape2D_36ral")
+=======
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-429, 0.0783234)
+rotation = 1.5708
+scale = Vector2(6.01465, 5.38403)
+texture = ExtResource("8_bnh38")
+>>>>>>> Stashed changes
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
