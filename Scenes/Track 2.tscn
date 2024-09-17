@@ -344,6 +344,8 @@ rotation = 1.5708
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(-335, -1)
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("7_djers")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -352,6 +354,8 @@ shape = SubResource("RectangleShape2D_bn4n4")
 
 [node name="Area2D2" type="Area2D" parent="."]
 position = Vector2(-335, -1)
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("8_x4fcq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]

@@ -212,6 +212,8 @@ position = Vector2(-960, 0)
 
 [node name="Area2D2" type="Area2D" parent="."]
 position = Vector2(-335, -1)
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("5_74bve")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
@@ -220,6 +222,8 @@ shape = SubResource("RectangleShape2D_dcj18")
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(-335, -1)
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("5_ksgxh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]

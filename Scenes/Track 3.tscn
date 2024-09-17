@@ -364,6 +364,8 @@ layer_0/tile_data = PackedInt32Array(786413, 4, 1, -524307, 4, 0, -458771, 4, 0,
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(-335, -1)
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("5_ovkfq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
@@ -372,6 +374,8 @@ shape = SubResource("RectangleShape2D_aa82d")
 
 [node name="Area2D2" type="Area2D" parent="."]
 position = Vector2(-335, -1)
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("6_okqm7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
