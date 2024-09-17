@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bublcgp4qolvi"]
+[gd_scene load_steps=10 format=3 uid="uid://bublcgp4qolvi"]
 
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="1_k0s8w"]
 [ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="2_g6m3k"]
@@ -6,6 +6,7 @@
 [ext_resource type="TileSet" uid="uid://m4esxg8uqc8u" path="res://Resources/background.tres" id="4_7hf1b"]
 [ext_resource type="Script" path="res://Scenes/area_2d.gd" id="5_ovkfq"]
 [ext_resource type="Script" path="res://Scenes/area_2d_2.gd" id="6_okqm7"]
+[ext_resource type="Texture2D" uid="uid://w2twwmhb2100" path="res://Resources/pixil-frame-0.png" id="7_gkydx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aa82d"]
 size = Vector2(154, 597)
@@ -381,6 +382,12 @@ script = ExtResource("6_okqm7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(6098, 5254)
 shape = SubResource("RectangleShape2D_wc105")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-427, 0.808691)
+rotation = 1.5708
+scale = Vector2(5.97986, 5.24803)
+texture = ExtResource("7_gkydx")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]

@@ -12,6 +12,7 @@ size = Vector2(20, 599)
 [node name="Barriers" parent="." instance=ExtResource("1_68n66")]
 z_index = 10
 colLay = 3
+isOverpass = true
 
 [node name="Barriers2" parent="." instance=ExtResource("1_68n66")]
 position = Vector2(1920, 0)
@@ -25,6 +26,7 @@ colLay = 5
 z_index = 10
 position = Vector2(960, 0)
 colLay = 3
+isOverpass = true
 
 [node name="Leave Overpass" type="Area2D" parent="."]
 collision_layer = 31
