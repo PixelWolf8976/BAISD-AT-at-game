@@ -16,7 +16,6 @@ func _ready():
 		queue_free()
 
 func _physics_process(delta):
-	
 	if speed < currentTopSpeed:
 		speed += acceleration * delta
 		if speed > currentTopSpeed:
