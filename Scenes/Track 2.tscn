@@ -364,6 +364,7 @@ position = Vector2(-81, 5631)
 shape = SubResource("RectangleShape2D_36ral")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
 position = Vector2(-427, 0.808691)
 rotation = 1.5708
 scale = Vector2(5.97986, 5.24803)
