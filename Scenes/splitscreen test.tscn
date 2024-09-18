@@ -1,14 +1,28 @@
-[gd_scene load_steps=7 format=3 uid="uid://loi804kpfwop"]
+[gd_scene load_steps=9 format=3 uid="uid://loi804kpfwop"]
 
 [ext_resource type="Script" path="res://Resources/splitscreen.gd" id="1_kqktd"]
 [ext_resource type="Script" path="res://Resources/CameraScript.gd" id="2_xgshd"]
 [ext_resource type="PackedScene" uid="uid://baajkcg4mw3jk" path="res://Scenes/Player1.tscn" id="3_bf0t6"]
 [ext_resource type="PackedScene" uid="uid://gsgjnsn2aypm" path="res://Scenes/Player2.tscn" id="4_5vj0a"]
 [ext_resource type="PackedScene" uid="uid://c3y0ckuevbl3t" path="res://Scenes/stopwatch_ui.tscn" id="6_y7r0x"]
+[ext_resource type="Shader" path="res://Scenes/splitscreen test.gdshader" id="7_esp8e"]
 [ext_resource type="Script" path="res://Resources/Camera2D2.gd" id="8_86p24"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6y0x2"]
+shader = ExtResource("7_esp8e")
+shader_parameter/blur_amount = 5.0
 
 [node name="Node" type="Node"]
 script = ExtResource("1_kqktd")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_6y0x2")
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="SubViewport" type="SubViewport" parent="TextureRect"]
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 anchors_preset = 15
