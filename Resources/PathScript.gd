@@ -8,8 +8,8 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	bar1.collision_layer = 1 << colLay | 1 << 0 | 1 << 1
-	bar2.collision_layer = 1 << colLay | 1 << 0 | 1 << 1
+	bar1.collision_layer = 1 << colLay | 1 << 0
+	bar2.collision_layer = 1 << colLay | 1 << 0
 	
 	if isOverpass:
 		$StaticBody2D/Sprite2D.visible = false
