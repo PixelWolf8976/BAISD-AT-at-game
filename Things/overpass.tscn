@@ -16,11 +16,11 @@ isOverpass = true
 
 [node name="Barriers2" parent="." instance=ExtResource("1_68n66")]
 position = Vector2(1920, 0)
-colLay = 5
+colLay = 2
 
 [node name="Barriers3" parent="." instance=ExtResource("1_68n66")]
 position = Vector2(-960, 0)
-colLay = 5
+colLay = 2
 
 [node name="Barriers4" parent="." instance=ExtResource("1_68n66")]
 z_index = 10

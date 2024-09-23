@@ -2,9 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_ivdcn"]
 [ext_resource type="Script" path="res://Resources/main_menu_script.gd" id="1_rog67"]
-[ext_resource type="Texture2D" uid="uid://dqvv3uaqbdb5u" path="res://Resources/Menu Text.png" id="2_vqxyk"]
 [ext_resource type="Texture2D" uid="uid://mcpcx04nsj1y" path="res://Resources/Play.png" id="3_em3px"]
 [ext_resource type="Texture2D" uid="uid://dv14g7muwaajj" path="res://Resources/Quit.png" id="4_1mwtj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6xrwu"]
+font_size = 75
+font_color = Color(0, 0, 0, 1)
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -25,20 +28,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_ivdcn")
-
-[node name="TextureRect2" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 834.0
-offset_top = 41.0
-offset_right = -589.0
-offset_bottom = -893.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_vqxyk")
-expand_mode = 1
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
@@ -69,6 +58,17 @@ grow_vertical = 2
 icon = ExtResource("4_1mwtj")
 icon_alignment = 1
 expand_icon = true
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 770.0
+offset_top = 25.0
+offset_right = 1421.0
+offset_bottom = 295.0
+text = "Drive Until Impact"
+label_settings = SubResource("LabelSettings_6xrwu")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
