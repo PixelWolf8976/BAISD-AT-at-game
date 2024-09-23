@@ -11,6 +11,8 @@ var currentTopSpeed = currentMaxSpeed
 var speed = 0.0
 var reachedCheckpoint := false
 
+var type := "Red"
+
 func _physics_process(delta):
 	if speed < currentTopSpeed:
 		speed += acceleration * delta

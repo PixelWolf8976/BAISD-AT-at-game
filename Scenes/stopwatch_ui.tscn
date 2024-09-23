@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c3y0ckuevbl3t"]
 
-[ext_resource type="Script" path="res://Scenes/stopwatch_ui.gd" id="1_cidmn"]
+[ext_resource type="Script" path="res://Resources/stopwatch_ui.gd" id="1_cidmn"]
 [ext_resource type="Texture2D" uid="uid://bx0ee7exof3ms" path="res://Resources/square.png" id="2_buds2"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_dwvjg"]
@@ -20,13 +20,15 @@ label_settings = SubResource("LabelSettings_dwvjg")
 horizontal_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]
+visible = false
 z_index = -1
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_buds2")
 expand_mode = 1
 
-[node name="Label2" type="Label" parent="."]
+[node name="WinnerText" type="Label" parent="."]
+visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 text = "Winner"
