@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="2_g6m3k"]
 [ext_resource type="PackedScene" uid="uid://c64awdyy3ynfc" path="res://Things/45_road.tscn" id="3_xoh3k"]
 [ext_resource type="TileSet" uid="uid://m4esxg8uqc8u" path="res://Resources/background.tres" id="4_7hf1b"]
-[ext_resource type="Script" path="res://Scenes/area_2d.gd" id="5_ovkfq"]
-[ext_resource type="Script" path="res://Scenes/area_2d_2.gd" id="6_okqm7"]
+[ext_resource type="Script" path="res://Resources/area_2d.gd" id="5_ovkfq"]
+[ext_resource type="Script" path="res://Resources/area_2d_2.gd" id="6_okqm7"]
 [ext_resource type="Texture2D" uid="uid://w2twwmhb2100" path="res://Resources/pixil-frame-0.png" id="7_gkydx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aa82d"]

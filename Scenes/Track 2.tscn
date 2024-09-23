@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dm8f72kl05gg" path="res://Things/Corner.tscn" id="4_tmmyx"]
 [ext_resource type="TileSet" uid="uid://m4esxg8uqc8u" path="res://Resources/background.tres" id="5_6bwym"]
 [ext_resource type="PackedScene" uid="uid://cywob5wyb7qas" path="res://Things/overpass.tscn" id="6_6qns3"]
-[ext_resource type="Script" path="res://Scenes/area_2d.gd" id="7_djers"]
-[ext_resource type="Script" path="res://Scenes/area_2d_2.gd" id="8_x4fcq"]
+[ext_resource type="Script" path="res://Resources/area_2d.gd" id="7_djers"]
+[ext_resource type="Script" path="res://Resources/area_2d_2.gd" id="8_x4fcq"]
 [ext_resource type="Texture2D" uid="uid://w2twwmhb2100" path="res://Resources/pixil-frame-0.png" id="9_sgse3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bn4n4"]

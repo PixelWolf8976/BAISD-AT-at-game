@@ -42,7 +42,6 @@ script = ExtResource("2_xgshd")
 [node name="Player1" parent="HBoxContainer/Viewport1/SubViewport1" instance=ExtResource("3_bf0t6")]
 unique_name_in_owner = true
 position = Vector2(0, 150)
-motion_mode = 1
 defaultMaxSpeed = 1000.0
 corneringMaxSpeed = 950.0
 acceleration = 400.0

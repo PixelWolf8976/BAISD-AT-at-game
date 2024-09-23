@@ -21,8 +21,15 @@ func stopStopwatch():
 	stopwatchRunning = false
 
 func finishRace(winner):
-	stopStopwatch()
-	
+	if stopwatchRunning:
+		stopStopwatch()
+		$WinnerText.visible = true
+		$TextureRect.visible = true
+		$WinnerText.text = winner.type + " wins!"
+		if winner.type == "Red":
+			$WinnerText.label_settings.font_color = Color(255, 0, 0)
+		else:
+			$WinnerText.label_settings.font_color = Color(0, 0, 255)
 
 func resetStopwatch():
 	stopwatchRunning = false
