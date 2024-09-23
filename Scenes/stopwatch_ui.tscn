@@ -7,7 +7,7 @@
 font_size = 60
 
 [sub_resource type="LabelSettings" id="LabelSettings_1f6tm"]
-font_size = 25
+font_size = 50
 
 [node name="Stopwatch UI" type="CanvasLayer"]
 script = ExtResource("1_cidmn")
