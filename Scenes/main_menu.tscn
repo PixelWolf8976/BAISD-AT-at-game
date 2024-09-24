@@ -4,11 +4,6 @@
 [ext_resource type="Script" path="res://Resources/main_menu_script.gd" id="1_rog67"]
 [ext_resource type="FontFile" uid="uid://xr3kdpi70bvj" path="res://Resources/Pixellari.ttf" id="3_jrk16"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_6xrwu"]
-font = ExtResource("3_jrk16")
-font_size = 85
-font_color = Color(0, 0, 0, 1)
-
 [sub_resource type="LabelSettings" id="LabelSettings_kva34"]
 font = ExtResource("3_jrk16")
 font_size = 100
@@ -18,6 +13,11 @@ font_color = Color(0.992157, 0.74902, 0, 1)
 font = ExtResource("3_jrk16")
 font_size = 100
 font_color = Color(0.992157, 0.74902, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6xrwu"]
+font = ExtResource("3_jrk16")
+font_size = 85
+font_color = Color(0, 0, 0, 1)
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -44,28 +44,48 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 877.0
-offset_top = 351.0
-offset_right = -819.0
-offset_bottom = -638.0
+offset_left = 810.0
+offset_top = 350.0
+offset_right = -885.0
+offset_bottom = -640.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
 expand_icon = true
+metadata/_edit_group_ = true
+
+[node name="Button1Label" type="Label" parent="Button"]
+layout_mode = 0
+offset_right = 224.0
+offset_bottom = 100.0
+text = "Play"
+label_settings = SubResource("LabelSettings_kva34")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 876.0
-offset_top = 472.0
-offset_right = -820.0
-offset_bottom = -517.0
+offset_left = 1110.0
+offset_top = 350.0
+offset_right = -585.0
+offset_bottom = -640.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
 expand_icon = true
+metadata/_edit_group_ = true
+
+[node name="Button2Label" type="Label" parent="Button2"]
+layout_mode = 0
+offset_right = 224.0
+offset_bottom = 100.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_mfdmm")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 0
@@ -75,28 +95,6 @@ offset_right = 1443.0
 offset_bottom = 309.0
 text = "Drive Until Impact"
 label_settings = SubResource("LabelSettings_6xrwu")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Button1Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 877.0
-offset_top = 351.0
-offset_right = 1101.0
-offset_bottom = 442.0
-text = "Play"
-label_settings = SubResource("LabelSettings_kva34")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Button2Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 876.0
-offset_top = 472.0
-offset_right = 1100.0
-offset_bottom = 563.0
-text = "Quit"
-label_settings = SubResource("LabelSettings_mfdmm")
 horizontal_alignment = 1
 vertical_alignment = 1
 

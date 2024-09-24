@@ -6,6 +6,18 @@ extends Control
 
 var levelOn := 1
 
+func _process(delta):
+	if Input.is_action_just_pressed("turn_left_1") || Input.is_action_just_pressed("turn_left_2"):
+		if levelOn == 1:
+			_on_level_1_button_pressed()
+		elif levelOn == 2:
+			_on_level_2_button_pressed()
+		elif levelOn == 3:
+			_on_level_3_button_pressed()
+	
+	if Input.is_action_just_pressed("turn_right_1") || Input.is_action_just_pressed("turn_right_2"):
+		_on_button_pressed()
+
 func _on_button_pressed():
 	levelOn += 1
 	if levelOn > 3:
