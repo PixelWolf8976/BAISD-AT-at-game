@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4i0kiiyqsnlp"]
+
+[ext_resource type="Script" path="res://Resources/button.gd" id="1_edvw5"]
+[ext_resource type="Texture2D" uid="uid://bdpgar7w6s55w" path="res://Resources/menu.png" id="1_jf6ds"]
+
+[node name="ConstantUI" type="CanvasLayer"]
+script = ExtResource("1_edvw5")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -80.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 80.0
+grow_horizontal = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+icon = ExtResource("1_jf6ds")
+icon_alignment = 1
+expand_icon = true
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

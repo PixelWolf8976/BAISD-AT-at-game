@@ -14,6 +14,11 @@ func _process(delta: float) -> void:
 				out += "0"
 		$Label.text = out
 
+## For once race is finished, look for input to go back to menu
+func _input(event: InputEvent):
+	if !stopwatchRunning && event is InputEventKey && event.is_pressed():
+		get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
+
 func startStopwatch():
 	stopwatchRunning = true
 
@@ -24,6 +29,7 @@ func finishRace(winner):
 	if stopwatchRunning:
 		stopStopwatch()
 		$WinnerText.visible = true
+		$PressKeyToExit.visible = true
 		$TextureRect.visible = true
 		$WinnerText.text = winner.type + " wins!"
 		if winner.type == "Red":
