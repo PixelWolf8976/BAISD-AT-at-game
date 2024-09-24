@@ -12,6 +12,7 @@
 font_size = 200
 
 [node name="Node" type="Node"]
+process_mode = 3
 script = ExtResource("1_kqktd")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -21,6 +22,7 @@ texture = ExtResource("2_wktmx")
 expand_mode = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
+process_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
