@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var defaultMaxSpeed = 500.0
-@export var corneringMaxSpeed = 475.0
-@export var acceleration = 200.0
+@export var defaultMaxSpeed = 5000.0
+@export var corneringMaxSpeed = 950.0
+@export var acceleration = 400.0
 
 @export var rotationSpeed = 2.0
 

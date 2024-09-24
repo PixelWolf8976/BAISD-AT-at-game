@@ -1,6 +1,7 @@
 extends Node
 
 var elapsedCountdownTime := 0.0
+var timerDone := false
 
 func _ready():
 	var viewport1 := $HBoxContainer/Viewport1/SubViewport1
@@ -14,12 +15,15 @@ func _ready():
 		print("OH NO")
 	elif level == 1:
 		var map = preload("res://Scenes/Track 1.tscn").instantiate()
+		map.process_mode = Node.PROCESS_MODE_PAUSABLE
 		$HBoxContainer/Viewport1/SubViewport1.add_child(map)
 	elif level == 2:
 		var map = preload("res://Scenes/Track 2.tscn").instantiate()
+		map.process_mode = Node.PROCESS_MODE_PAUSABLE
 		$HBoxContainer/Viewport1/SubViewport1.add_child(map)
 	elif level == 3:
 		var map = preload("res://Scenes/Track 3.tscn").instantiate()
+		map.process_mode = Node.PROCESS_MODE_PAUSABLE
 		$HBoxContainer/Viewport1/SubViewport1.add_child(map)
 	
 	$HBoxContainer/Viewport1/SubViewport1/Camera2D.position = get_node("%Player1").position
@@ -27,11 +31,14 @@ func _ready():
 	get_tree().paused = true
 
 func _process(delta: float) -> void:
-	$Label.text = str(3 - round(elapsedCountdownTime))
-	if $Label.text == "0":
-		$Label.text == "GO!"
-	elapsedCountdownTime += delta
-	if elapsedCountdownTime >= 3:
-		$Label.visible = false
-		get_tree().paused = false
-	
+	if !timerDone:
+		$Label.visible = true
+		$Label.text = str(3 - round(elapsedCountdownTime))
+		if $Label.text == "0":
+			$Label.text = "GO!"
+		elapsedCountdownTime += delta
+		if elapsedCountdownTime >= 3:
+			elapsedCountdownTime = 0.0
+			timerDone = true
+			$Label.visible = false
+			get_tree().paused = false

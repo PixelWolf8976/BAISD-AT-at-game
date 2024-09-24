@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dprix7j7m168u"]
+[gd_scene load_steps=8 format=3 uid="uid://dprix7j7m168u"]
 
 [ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_2k6fn"]
 [ext_resource type="Script" path="res://Resources/player_selection.gd" id="1_5aa0l"]
+[ext_resource type="PackedScene" uid="uid://c4i0kiiyqsnlp" path="res://Scenes/constant_ui.tscn" id="2_hjjfw"]
 [ext_resource type="FontFile" uid="uid://xr3kdpi70bvj" path="res://Resources/Pixellari.ttf" id="4_a0doa"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4geeg"]
@@ -24,6 +25,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5aa0l")
+
+[node name="ConstantUI" parent="." instance=ExtResource("2_hjjfw")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0

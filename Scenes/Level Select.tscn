@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bb7832r2ujysd"]
+[gd_scene load_steps=8 format=3 uid="uid://bb7832r2ujysd"]
 
 [ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_m0unk"]
 [ext_resource type="Script" path="res://Resources/Level Select Script.gd" id="1_siwes"]
 [ext_resource type="Texture2D" uid="uid://ddvry1dxl7q8o" path="res://Resources/Level Select.png" id="2_qmq0w"]
+[ext_resource type="PackedScene" uid="uid://c4i0kiiyqsnlp" path="res://Scenes/constant_ui.tscn" id="2_t6fss"]
 [ext_resource type="Texture2D" uid="uid://bbn4yffr22qi3" path="res://Resources/Level 1.png" id="3_fyfma"]
 [ext_resource type="Texture2D" uid="uid://dn0p2jysxj1jp" path="res://Resources/Level 2.png" id="4_yb2y2"]
 [ext_resource type="Texture2D" uid="uid://vkxaxhg6gnhf" path="res://Resources/Level 3.png" id="5_k4l0e"]
@@ -15,6 +16,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_siwes")
+
+[node name="ConstantUI" parent="." instance=ExtResource("2_t6fss")]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
