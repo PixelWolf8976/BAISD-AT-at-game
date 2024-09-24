@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://loi804kpfwop"]
+[gd_scene load_steps=9 format=3 uid="uid://loi804kpfwop"]
 
 [ext_resource type="Script" path="res://Resources/splitscreen.gd" id="1_kqktd"]
 [ext_resource type="Texture2D" uid="uid://bx0ee7exof3ms" path="res://Resources/square.png" id="2_wktmx"]
@@ -7,6 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://gsgjnsn2aypm" path="res://Scenes/Player2.tscn" id="4_5vj0a"]
 [ext_resource type="PackedScene" uid="uid://c3y0ckuevbl3t" path="res://Scenes/stopwatch_ui.tscn" id="6_y7r0x"]
 [ext_resource type="Script" path="res://Resources/Camera2D2.gd" id="8_86p24"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_l3wqi"]
+font_size = 200
 
 [node name="Node" type="Node"]
 script = ExtResource("1_kqktd")
@@ -32,7 +35,7 @@ stretch = true
 
 [node name="SubViewport1" type="SubViewport" parent="HBoxContainer/Viewport1"]
 handle_input_locally = false
-size = Vector2i(2, 2)
+size = Vector2i(958, 1080)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/Viewport1/SubViewport1"]
@@ -60,7 +63,7 @@ stretch = true
 
 [node name="SubViewport2" type="SubViewport" parent="HBoxContainer/Viewport2"]
 handle_input_locally = false
-size = Vector2i(2, 2)
+size = Vector2i(958, 1080)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/Viewport2/SubViewport2"]
@@ -69,3 +72,13 @@ script = ExtResource("8_86p24")
 
 [node name="StopwatchUI" parent="." instance=ExtResource("6_y7r0x")]
 unique_name_in_owner = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 333.0
+offset_top = 147.0
+offset_right = 1588.0
+offset_bottom = 550.0
+text = "Countdown"
+label_settings = SubResource("LabelSettings_l3wqi")
+horizontal_alignment = 1
+vertical_alignment = 1

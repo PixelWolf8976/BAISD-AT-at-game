@@ -19,3 +19,6 @@ func _ready():
 	elif level == 3:
 		var map = preload("res://Scenes/Track 3.tscn").instantiate()
 		$HBoxContainer/Viewport1/SubViewport1.add_child(map)
+		
+func _process(delta: float) -> void:
+	pass
