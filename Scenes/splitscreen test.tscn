@@ -50,6 +50,9 @@ process_mode = 3
 zoom = Vector2(0.75, 0.75)
 script = ExtResource("2_xgshd")
 
+[node name="AudioListener2D" type="AudioListener2D" parent="HBoxContainer/Viewport1/SubViewport1/Camera2D"]
+current = true
+
 [node name="Player1" parent="HBoxContainer/Viewport1/SubViewport1" instance=ExtResource("3_bf0t6")]
 unique_name_in_owner = true
 position = Vector2(0, 150)

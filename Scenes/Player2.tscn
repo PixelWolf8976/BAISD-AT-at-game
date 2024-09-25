@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://gsgjnsn2aypm"]
+[gd_scene load_steps=5 format=3 uid="uid://gsgjnsn2aypm"]
 
 [ext_resource type="Script" path="res://Resources/Player2.gd" id="1_7mrq4"]
 [ext_resource type="Texture2D" uid="uid://cyr0anvr06v83" path="res://Resources/Blue CAR.png" id="2_mdd0y"]
+[ext_resource type="AudioStream" uid="uid://ckicn8cd063x6" path="res://Resources/Driving Sound.wav" id="3_ame3k"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gmaxi"]
 radius = 109.0
@@ -22,3 +23,12 @@ texture = ExtResource("2_mdd0y")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_gmaxi")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("3_ame3k")
+volume_db = -10.0
+pitch_scale = 0.5
+autoplay = true
+
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

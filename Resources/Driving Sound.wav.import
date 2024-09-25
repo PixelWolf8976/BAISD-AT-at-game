@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ckicn8cd063x6"
+path="res://.godot/imported/Driving Sound.wav-eb0b1d489d01da35e9eab7bca3336e15.sample"
+
+[deps]
+
+source_file="res://Resources/Driving Sound.wav"
+dest_files=["res://.godot/imported/Driving Sound.wav-eb0b1d489d01da35e9eab7bca3336e15.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

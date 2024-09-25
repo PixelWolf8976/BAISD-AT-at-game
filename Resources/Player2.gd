@@ -46,6 +46,9 @@ func _physics_process(delta):
 	
 	move_and_slide()
 	
+	$AudioStreamPlayer.pitch_scale = lerp(0.5, 1.5, velocity.length() / defaultMaxSpeed)
+	$AudioStreamPlayer.volume_db = -10 + randf_range(-1.5, 1.5)
+	
 	currentTopSpeed = currentMaxSpeed * getSlowdown()
 
 func getSlowdown():
@@ -79,3 +82,7 @@ func getAbsVal(value):
 	if value < 0:
 		value *= -1
 	return value
+
+
+func _on_audio_stream_player_finished() -> void:
+	$AudioStreamPlayer.play()
