@@ -51,7 +51,7 @@ offset_bottom = 1080.0
 text = "
 
 
-(Press any key to go back to menu)"
+(Press any button to go back to menu)"
 label_settings = SubResource("LabelSettings_muynj")
 horizontal_alignment = 1
 vertical_alignment = 1

@@ -1,19 +1,24 @@
 extends CanvasLayer
 
+var menuOpen := false
+
 func _ready():
 	$TextureRect.modulate = Color(1, 1, 1, 0.5)
 
 func _process(delta):
 	if Input.is_action_just_pressed("turn_left_1") || Input.is_action_just_pressed("turn_left_2"):
-		_on_resume_pressed()
+		if menuOpen:
+			_on_resume_pressed()
 	
 	if Input.is_action_just_pressed("turn_right_1") || Input.is_action_just_pressed("turn_right_2"):
-		_on_exit_pressed()
+		if menuOpen:
+			_on_exit_pressed()
 
 func _on_button_pressed() -> void:
 	openMenu()
 
 func openMenu():
+	menuOpen = true
 	$TextureRect.visible = true
 	$Resume.visible = true
 	$Exit.visible = true
@@ -22,6 +27,7 @@ func openMenu():
 	get_parent().get_tree().paused = true
 
 func closeMenu():
+	menuOpen = false
 	$TextureRect.visible = false
 	$Resume.visible = false
 	$Exit.visible = false
