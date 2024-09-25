@@ -10,6 +10,8 @@ func openMenu():
 	$TextureRect.visible = true
 	$Resume.visible = true
 	$Exit.visible = true
+	if get_node("/root/Node") && !get_node("/root/Node").timerDone:
+		get_parent().timerDone = true
 	get_parent().get_tree().paused = true
 
 func closeMenu():

@@ -17,17 +17,12 @@ metadata/_edit_horizontal_guides_ = [-583.0]
 [node name="Player1" parent="." instance=ExtResource("1_g2chq")]
 unique_name_in_owner = true
 position = Vector2(0, 150)
-motion_mode = 1
 defaultMaxSpeed = 1000.0
-corneringMaxSpeed = 950.0
-acceleration = 400.0
 
 [node name="Player 2" parent="." instance=ExtResource("6_jhw8w")]
 unique_name_in_owner = true
 position = Vector2(0, -150)
 defaultMaxSpeed = 1000.0
-corneringMaxSpeed = 950.0
-acceleration = 400.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.5, 0.5)

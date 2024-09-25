@@ -45,6 +45,7 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="Label" type="Label" parent="Button"]
+layout_mode = 0
 offset_right = 224.0
 offset_bottom = 91.0
 text = "Next"
@@ -91,6 +92,7 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="Label" type="Label" parent="Level2Button"]
+layout_mode = 0
 offset_right = 224.0
 offset_bottom = 91.0
 text = "Level 2"
@@ -114,6 +116,7 @@ icon_alignment = 1
 expand_icon = true
 
 [node name="Label" type="Label" parent="Level3Button"]
+layout_mode = 0
 offset_right = 224.0
 offset_bottom = 91.0
 text = "Level 3"

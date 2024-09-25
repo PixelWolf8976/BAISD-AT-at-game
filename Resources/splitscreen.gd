@@ -36,9 +36,20 @@ func _process(delta: float) -> void:
 		$Label.text = str(3 - round(elapsedCountdownTime))
 		if $Label.text == "0":
 			$Label.text = "GO!"
+		
+		if $Label.text == "0" || $Label.text == "GO!":
+			$Label.label_settings.font_color = Color(0, 1, 0)
+		elif $Label.text == "1":
+			$Label.label_settings.font_color = Color(1, 0.75, 0)
+		elif $Label.text == "2":
+			$Label.label_settings.font_color = Color(1, 0.5, 0)
+		elif$Label.text == "3":
+			$Label.label_settings.font_color = Color(1, 0, 0)
+		
 		elapsedCountdownTime += delta
 		if elapsedCountdownTime >= 3:
-			elapsedCountdownTime = 0.0
 			timerDone = true
-			$Label.visible = false
 			get_tree().paused = false
+	else:
+		elapsedCountdownTime = 0.0
+		$Label.visible = false
