@@ -66,7 +66,7 @@ texture = ExtResource("3_as3ws")
 
 [node name="Resume" type="Button" parent="."]
 visible = false
-anchors_preset = -1
+anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
 offset_left = 641.0
@@ -86,7 +86,7 @@ vertical_alignment = 1
 
 [node name="Exit" type="Button" parent="."]
 visible = false
-anchors_preset = -1
+anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
@@ -97,6 +97,7 @@ offset_right = -640.5
 offset_bottom = 100.0
 
 [node name="Label" type="Label" parent="Exit"]
+layout_mode = 0
 offset_right = 301.0
 offset_bottom = 201.0
 text = "Exit to Menu"
