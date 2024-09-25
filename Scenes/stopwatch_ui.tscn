@@ -5,7 +5,8 @@
 [ext_resource type="FontFile" uid="uid://xr3kdpi70bvj" path="res://Resources/Pixellari.ttf" id="3_pmwrx"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_dwvjg"]
-font_size = 60
+font = ExtResource("3_pmwrx")
+font_size = 75
 
 [sub_resource type="LabelSettings" id="LabelSettings_1f6tm"]
 font = ExtResource("3_pmwrx")
