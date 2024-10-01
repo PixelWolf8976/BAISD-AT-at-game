@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bublcgp4qolvi"]
+[gd_scene load_steps=11 format=3 uid="uid://bublcgp4qolvi"]
 
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="1_k0s8w"]
 [ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="2_g6m3k"]
@@ -6,6 +6,7 @@
 [ext_resource type="TileSet" uid="uid://m4esxg8uqc8u" path="res://Resources/background.tres" id="4_7hf1b"]
 [ext_resource type="Script" path="res://Resources/area_2d.gd" id="5_ovkfq"]
 [ext_resource type="Script" path="res://Resources/area_2d_2.gd" id="6_okqm7"]
+[ext_resource type="Texture2D" uid="uid://bs15q7uau5mxj" path="res://Resources/Bush.png" id="7_820gs"]
 [ext_resource type="Texture2D" uid="uid://w2twwmhb2100" path="res://Resources/pixil-frame-0.png" id="7_gkydx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aa82d"]
@@ -383,12 +384,372 @@ script = ExtResource("6_okqm7")
 position = Vector2(6098, 5254)
 shape = SubResource("RectangleShape2D_wc105")
 
+[node name="Bush" type="Sprite2D" parent="."]
+position = Vector2(-541, -1129)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
 position = Vector2(-427, 0.808691)
 rotation = 1.5708
 scale = Vector2(5.97986, 5.24803)
 texture = ExtResource("7_gkydx")
+
+[node name="Bush2" type="Sprite2D" parent="."]
+position = Vector2(-13668, -202)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush3" type="Sprite2D" parent="."]
+position = Vector2(-13405, -868)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush4" type="Sprite2D" parent="."]
+position = Vector2(-12986, -1220)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush5" type="Sprite2D" parent="."]
+position = Vector2(-12567, -1672)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush6" type="Sprite2D" parent="."]
+position = Vector2(-12149, -2045)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush7" type="Sprite2D" parent="."]
+position = Vector2(-11255, -2871)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush8" type="Sprite2D" parent="."]
+position = Vector2(-10814, -3358)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush9" type="Sprite2D" parent="."]
+position = Vector2(-9649, -4206)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush10" type="Sprite2D" parent="."]
+position = Vector2(-10418, -3821)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush11" type="Sprite2D" parent="."]
+position = Vector2(-11732, -2473)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush12" type="Sprite2D" parent="."]
+position = Vector2(-4037, -4206)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush13" type="Sprite2D" parent="."]
+position = Vector2(-3505, -4161)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush14" type="Sprite2D" parent="."]
+position = Vector2(-3181, -3787)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush15" type="Sprite2D" parent="."]
+position = Vector2(-2795, -3446)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush16" type="Sprite2D" parent="."]
+position = Vector2(-2400, -3051)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush17" type="Sprite2D" parent="."]
+position = Vector2(-2023, -2629)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush18" type="Sprite2D" parent="."]
+position = Vector2(-1610, -2278)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush19" type="Sprite2D" parent="."]
+position = Vector2(-1250, -1820)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush20" type="Sprite2D" parent="."]
+position = Vector2(-945, -1506)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush21" type="Sprite2D" parent="."]
+position = Vector2(16752, 8902)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush22" type="Sprite2D" parent="."]
+position = Vector2(18365, 7209)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush23" type="Sprite2D" parent="."]
+position = Vector2(19453, 5959)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush24" type="Sprite2D" parent="."]
+position = Vector2(19425, -129)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush25" type="Sprite2D" parent="."]
+position = Vector2(19487, -759)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush26" type="Sprite2D" parent="."]
+position = Vector2(19007, -1202)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush27" type="Sprite2D" parent="."]
+position = Vector2(18552, -1610)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush28" type="Sprite2D" parent="."]
+position = Vector2(18144, -2017)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush29" type="Sprite2D" parent="."]
+position = Vector2(17725, -2485)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush30" type="Sprite2D" parent="."]
+position = Vector2(17281, -2904)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush31" type="Sprite2D" parent="."]
+position = Vector2(16802, -3300)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush32" type="Sprite2D" parent="."]
+position = Vector2(16238, -3767)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush33" type="Sprite2D" parent="."]
+position = Vector2(15375, -4235)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush34" type="Sprite2D" parent="."]
+position = Vector2(6445, -1502)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush35" type="Sprite2D" parent="."]
+position = Vector2(6949, -1993)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush36" type="Sprite2D" parent="."]
+position = Vector2(7368, -2341)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush37" type="Sprite2D" parent="."]
+position = Vector2(7872, -2844)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush38" type="Sprite2D" parent="."]
+position = Vector2(8243, -3228)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush39" type="Sprite2D" parent="."]
+position = Vector2(8819, -3743)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush40" type="Sprite2D" parent="."]
+position = Vector2(9718, -4139)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush41" type="Sprite2D" parent="."]
+position = Vector2(8448, 8732)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush42" type="Sprite2D" parent="."]
+position = Vector2(6696, 6920)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush43" type="Sprite2D" parent="."]
+position = Vector2(-9460, 9549)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush44" type="Sprite2D" parent="."]
+position = Vector2(-10282, 9261)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush45" type="Sprite2D" parent="."]
+position = Vector2(-10697, 8735)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush46" type="Sprite2D" parent="."]
+position = Vector2(-11155, 8294)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush47" type="Sprite2D" parent="."]
+position = Vector2(-11638, 7879)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush48" type="Sprite2D" parent="."]
+position = Vector2(-12121, 7421)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush49" type="Sprite2D" parent="."]
+position = Vector2(-12545, 6989)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush50" type="Sprite2D" parent="."]
+position = Vector2(-12994, 6557)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush51" type="Sprite2D" parent="."]
+position = Vector2(-13450, 6175)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush52" type="Sprite2D" parent="."]
+position = Vector2(-13766, 5655)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush53" type="Sprite2D" parent="."]
+position = Vector2(-3252, 9417)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush54" type="Sprite2D" parent="."]
+position = Vector2(-2724, 8809)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush55" type="Sprite2D" parent="."]
+position = Vector2(-2372, 8409)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush56" type="Sprite2D" parent="."]
+position = Vector2(-1924, 8009)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush57" type="Sprite2D" parent="."]
+position = Vector2(-1492, 7609)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush58" type="Sprite2D" parent="."]
+position = Vector2(-1156, 7209)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush59" type="Sprite2D" parent="."]
+position = Vector2(-756, 6809)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush60" type="Sprite2D" parent="."]
+position = Vector2(-276, 6409)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush61" type="Sprite2D" parent="."]
+position = Vector2(7737, 7921)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush62" type="Sprite2D" parent="."]
+position = Vector2(7194, 7429)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush63" type="Sprite2D" parent="."]
+position = Vector2(6306, 6490)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush64" type="Sprite2D" parent="."]
+position = Vector2(15428, 9484)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush65" type="Sprite2D" parent="."]
+position = Vector2(9641, 9488)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush66" type="Sprite2D" parent="."]
+position = Vector2(8887, 9219)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush67" type="Sprite2D" parent="."]
+position = Vector2(8052, 8348)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush68" type="Sprite2D" parent="."]
+position = Vector2(19585, 5286)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush69" type="Sprite2D" parent="."]
+position = Vector2(18966, 6672)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush70" type="Sprite2D" parent="."]
+position = Vector2(17682, 7849)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush71" type="Sprite2D" parent="."]
+position = Vector2(17157, 8448)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
+
+[node name="Bush72" type="Sprite2D" parent="."]
+position = Vector2(16222, 9242)
+scale = Vector2(10, 10)
+texture = ExtResource("7_820gs")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
