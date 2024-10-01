@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cia0p7encwxn6"]
+[gd_scene load_steps=13 format=3 uid="uid://cia0p7encwxn6"]
 
 [ext_resource type="PackedScene" uid="uid://cycx54k60s5it" path="res://Things/Path.tscn" id="1_s6rg4"]
 [ext_resource type="PackedScene" uid="uid://cf5647yiagq8j" path="res://Things/45DegreeCorner.tscn" id="2_2wxdp"]
@@ -9,6 +9,7 @@
 [ext_resource type="TileSet" uid="uid://m4esxg8uqc8u" path="res://Resources/background.tres" id="6_bqwmd"]
 [ext_resource type="PackedScene" uid="uid://cywob5wyb7qas" path="res://Things/overpass.tscn" id="7_ex7dc"]
 [ext_resource type="Texture2D" uid="uid://w2twwmhb2100" path="res://Resources/pixil-frame-0.png" id="9_tf52j"]
+[ext_resource type="Texture2D" uid="uid://b4yosigm7ennv" path="res://Resources/Tree.png" id="10_jklio"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dcj18"]
 size = Vector2(277, 597)
@@ -365,6 +366,121 @@ position = Vector2(-427, 0.808691)
 rotation = 1.5708
 scale = Vector2(5.97986, 5.24803)
 texture = ExtResource("9_tf52j")
+
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(-8778, 1690)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree2" type="Sprite2D" parent="."]
+position = Vector2(-8765, 4360)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree3" type="Sprite2D" parent="."]
+position = Vector2(-10016, 2894)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree4" type="Sprite2D" parent="."]
+position = Vector2(-10186, 9955)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree5" type="Sprite2D" parent="."]
+position = Vector2(-7932, 9225)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree6" type="Sprite2D" parent="."]
+position = Vector2(-3765, 8704)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree7" type="Sprite2D" parent="."]
+position = Vector2(673, 5328)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree8" type="Sprite2D" parent="."]
+position = Vector2(1041, 5638)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree9" type="Sprite2D" parent="."]
+position = Vector2(322, 4914)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree10" type="Sprite2D" parent="."]
+position = Vector2(14, 4555)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree11" type="Sprite2D" parent="."]
+position = Vector2(344, 3411)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree12" type="Sprite2D" parent="."]
+position = Vector2(-124, 3879)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree13" type="Sprite2D" parent="."]
+position = Vector2(1353, 4048)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree14" type="Sprite2D" parent="."]
+position = Vector2(935, 3706)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree15" type="Sprite2D" parent="."]
+position = Vector2(2025, 5159)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree16" type="Sprite2D" parent="."]
+position = Vector2(1742, 4453)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree17" type="Sprite2D" parent="."]
+position = Vector2(10825, 6055)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree18" type="Sprite2D" parent="."]
+position = Vector2(9689, 4423)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree19" type="Sprite2D" parent="."]
+position = Vector2(8681, 5431)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree20" type="Sprite2D" parent="."]
+position = Vector2(10851, -2197)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree21" type="Sprite2D" parent="."]
+position = Vector2(10020, 6.99998)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree22" type="Sprite2D" parent="."]
+position = Vector2(3680, -1705)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree23" type="Sprite2D" parent="."]
+position = Vector2(5223, -247)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
 
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
