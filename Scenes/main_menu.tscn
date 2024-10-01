@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://d23w5n08u40kt"]
 
-[ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_ivdcn"]
 [ext_resource type="Script" path="res://Resources/main_menu_script.gd" id="1_rog67"]
+[ext_resource type="Texture2D" uid="uid://dsp181dbnb5w7" path="res://Resources/Updated Main Menu.png" id="2_n2ryq"]
 [ext_resource type="FontFile" uid="uid://xr3kdpi70bvj" path="res://Resources/Pixellari.ttf" id="3_jrk16"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_kva34"]
@@ -37,17 +37,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_ivdcn")
+texture = ExtResource("2_n2ryq")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 810.0
-offset_top = 350.0
-offset_right = -885.0
-offset_bottom = -640.0
+offset_left = 644.0
+offset_top = 333.0
+offset_right = -1051.0
+offset_bottom = -657.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
@@ -68,10 +68,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1110.0
-offset_top = 350.0
-offset_right = -585.0
-offset_bottom = -640.0
+offset_left = 1008.0
+offset_top = 333.0
+offset_right = -687.0
+offset_bottom = -657.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
@@ -89,10 +89,10 @@ vertical_alignment = 1
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 0
-offset_left = 758.0
-offset_top = 39.0
-offset_right = 1443.0
-offset_bottom = 309.0
+offset_left = 601.0
+offset_top = 60.0
+offset_right = 1286.0
+offset_bottom = 330.0
 text = "Drive Until Impact"
 label_settings = SubResource("LabelSettings_6xrwu")
 horizontal_alignment = 1
