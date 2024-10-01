@@ -21,3 +21,5 @@ scale = Vector2(1.045, 1.045)
 position = Vector2(0, 450)
 rotation = 1.5708
 scale = Vector2(1.045, 1.045)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
