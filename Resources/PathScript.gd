@@ -2,6 +2,7 @@ extends Node2D
 
 @export var colLay := 1
 @export var isOverpass := false 
+@export var isPartOfOverpass := false
 
 @onready var bar1 := $StaticBody2D
 @onready var bar2 := $StaticBody2D2
@@ -10,6 +11,13 @@ extends Node2D
 func _ready():
 	bar1.collision_layer = 1 << colLay | 1 << 0
 	bar2.collision_layer = 1 << colLay | 1 << 0
+	
+	if isPartOfOverpass:
+		$Bush.visible = false
+		$Bush2.visible = false
+	else:
+		$Bush.rotation = -rotation
+		$Bush2.rotation = -rotation
 	
 	if isOverpass:
 		$StaticBody2D/Sprite2D.visible = false
