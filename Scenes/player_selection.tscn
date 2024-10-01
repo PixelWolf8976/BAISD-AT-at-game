@@ -1,21 +1,21 @@
 [gd_scene load_steps=8 format=3 uid="uid://dprix7j7m168u"]
 
-[ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_2k6fn"]
 [ext_resource type="Script" path="res://Resources/player_selection.gd" id="1_5aa0l"]
 [ext_resource type="PackedScene" uid="uid://c4i0kiiyqsnlp" path="res://Scenes/constant_ui.tscn" id="2_hjjfw"]
+[ext_resource type="Texture2D" uid="uid://dsp181dbnb5w7" path="res://Resources/Updated Main Menu.png" id="3_uqypw"]
 [ext_resource type="FontFile" uid="uid://xr3kdpi70bvj" path="res://Resources/Pixellari.ttf" id="4_a0doa"]
 
-[sub_resource type="LabelSettings" id="LabelSettings_4geeg"]
+[sub_resource type="LabelSettings" id="LabelSettings_c5wx6"]
 font = ExtResource("4_a0doa")
-font_size = 100
+font_size = 40
 
 [sub_resource type="LabelSettings" id="LabelSettings_rqp1d"]
 font = ExtResource("4_a0doa")
 font_size = 40
 
-[sub_resource type="LabelSettings" id="LabelSettings_c5wx6"]
+[sub_resource type="LabelSettings" id="LabelSettings_4geeg"]
 font = ExtResource("4_a0doa")
-font_size = 40
+font_size = 100
 
 [node name="Player selection" type="Control"]
 layout_mode = 3
@@ -32,79 +32,66 @@ script = ExtResource("1_5aa0l")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("1_2k6fn")
-
-[node name="TextureRect2" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 776.0
-offset_top = 41.0
-offset_right = -480.0
-offset_bottom = -893.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
+texture = ExtResource("3_uqypw")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1116.0
-offset_top = 344.0
-offset_right = -580.0
-offset_bottom = -645.0
+offset_left = 1069.0
+offset_top = 277.0
+offset_right = -627.0
+offset_bottom = -712.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
 expand_icon = true
+metadata/_edit_group_ = true
+
+[node name="TwoPlayerLabel" type="Label" parent="Button"]
+z_index = 1
+layout_mode = 0
+offset_right = 224.0
+offset_bottom = 91.0
+text = "Two Player"
+label_settings = SubResource("LabelSettings_c5wx6")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 865.0
-offset_top = 344.0
-offset_right = -831.0
-offset_bottom = -645.0
+offset_left = 675.0
+offset_top = 277.0
+offset_right = -1021.0
+offset_bottom = -712.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
 expand_icon = true
+metadata/_edit_group_ = true
 
-[node name="PlayerSelectionLabel" type="Label" parent="."]
+[node name="SingleplayerLabel" type="Label" parent="Button2"]
+z_index = 1
 layout_mode = 0
-offset_left = 750.0
-offset_top = 83.0
-offset_right = 1456.0
-offset_bottom = 183.0
-text = "Player Selection"
-label_settings = SubResource("LabelSettings_4geeg")
-
-[node name="SingleplayerLabel" type="Label" parent="."]
-layout_mode = 0
-offset_left = 865.0
-offset_top = 344.0
-offset_right = 1089.0
-offset_bottom = 435.0
+offset_right = 224.0
+offset_bottom = 91.0
 text = "Singleplayer"
 label_settings = SubResource("LabelSettings_rqp1d")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TwoPlayerLabel" type="Label" parent="."]
+[node name="PlayerSelectionLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1116.0
-offset_top = 344.0
-offset_right = 1340.0
-offset_bottom = 435.0
-text = "Two Player"
-label_settings = SubResource("LabelSettings_c5wx6")
-horizontal_alignment = 1
-vertical_alignment = 1
+offset_left = 647.0
+offset_top = 63.0
+offset_right = 1353.0
+offset_bottom = 163.0
+text = "Player Selection"
+label_settings = SubResource("LabelSettings_4geeg")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

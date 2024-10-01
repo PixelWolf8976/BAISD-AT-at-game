@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://bb7832r2ujysd"]
 
-[ext_resource type="Texture2D" uid="uid://c72hmubie0g6j" path="res://Resources/Main menue.png" id="1_m0unk"]
 [ext_resource type="Script" path="res://Resources/Level Select Script.gd" id="1_siwes"]
 [ext_resource type="PackedScene" uid="uid://c4i0kiiyqsnlp" path="res://Scenes/constant_ui.tscn" id="2_t6fss"]
+[ext_resource type="Texture2D" uid="uid://dsp181dbnb5w7" path="res://Resources/Updated Main Menu.png" id="3_vw5v2"]
 [ext_resource type="FontFile" uid="uid://xr3kdpi70bvj" path="res://Resources/Pixellari.ttf" id="4_ptcp6"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_6vjdx"]
@@ -28,21 +28,22 @@ script = ExtResource("1_siwes")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("1_m0unk")
+texture = ExtResource("3_vw5v2")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1116.0
-offset_top = 344.0
-offset_right = -580.0
-offset_bottom = -645.0
+offset_left = 1069.0
+offset_top = 244.0
+offset_right = -627.0
+offset_bottom = -745.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
 expand_icon = true
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="Button"]
 layout_mode = 0
@@ -58,14 +59,15 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 865.0
-offset_top = 344.0
-offset_right = -831.0
-offset_bottom = -645.0
+offset_left = 678.0
+offset_top = 244.0
+offset_right = -1018.0
+offset_bottom = -745.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
 expand_icon = true
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="Level1Button"]
 layout_mode = 0
@@ -82,14 +84,15 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 865.0
-offset_top = 344.0
-offset_right = -831.0
-offset_bottom = -645.0
+offset_left = 678.0
+offset_top = 244.0
+offset_right = -1018.0
+offset_bottom = -745.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
 expand_icon = true
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="Level2Button"]
 layout_mode = 0
@@ -106,14 +109,15 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 865.0
-offset_top = 344.0
-offset_right = -831.0
-offset_bottom = -645.0
+offset_left = 678.0
+offset_top = 244.0
+offset_right = -1018.0
+offset_bottom = -745.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
 expand_icon = true
+metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="Level3Button"]
 layout_mode = 0
@@ -126,10 +130,10 @@ vertical_alignment = 1
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 0
-offset_left = 803.0
-offset_top = 84.0
-offset_right = 1407.0
-offset_bottom = 200.0
+offset_left = 663.0
+offset_top = 48.0
+offset_right = 1267.0
+offset_bottom = 164.0
 text = "Level Select"
 label_settings = SubResource("LabelSettings_tx5hg")
 horizontal_alignment = 1
