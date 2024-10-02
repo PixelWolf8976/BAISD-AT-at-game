@@ -13,8 +13,8 @@ config_version=5
 config/name="Racing game"
 run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
-boot_splash/image="res://Resources/Main menue.png"
-config/icon="res://Resources/icon.svg"
+boot_splash/image="res://Resources/Updated Main Menu.png"
+config/icon="res://Resources/Red CAR.png"
 
 [autoload]
 

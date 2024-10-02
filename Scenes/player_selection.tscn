@@ -39,10 +39,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1069.0
-offset_top = 277.0
-offset_right = -627.0
-offset_bottom = -712.0
+offset_left = 1110.0
+offset_top = 272.0
+offset_right = -585.0
+offset_bottom = -718.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
@@ -64,10 +64,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 675.0
-offset_top = 277.0
-offset_right = -1021.0
-offset_bottom = -712.0
+offset_left = 634.0
+offset_top = 272.0
+offset_right = -1061.0
+offset_bottom = -718.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
@@ -86,12 +86,13 @@ vertical_alignment = 1
 
 [node name="PlayerSelectionLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 647.0
-offset_top = 63.0
-offset_right = 1353.0
-offset_bottom = 163.0
+offset_left = 53.0
+offset_right = 1920.0
+offset_bottom = 201.0
 text = "Player Selection"
 label_settings = SubResource("LabelSettings_4geeg")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
