@@ -482,5 +482,45 @@ position = Vector2(5223, -247)
 scale = Vector2(10.4907, 11.5685)
 texture = ExtResource("10_jklio")
 
+[node name="Tree24" type="Sprite2D" parent="."]
+position = Vector2(1677, 4872)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree25" type="Sprite2D" parent="."]
+position = Vector2(1677, 4872)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree26" type="Sprite2D" parent="."]
+position = Vector2(1458, 5567)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree27" type="Sprite2D" parent="."]
+position = Vector2(371, 3921)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree28" type="Sprite2D" parent="."]
+position = Vector2(824, 4056)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree29" type="Sprite2D" parent="."]
+position = Vector2(1262, 4404)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree30" type="Sprite2D" parent="."]
+position = Vector2(688, 4570)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
+[node name="Tree31" type="Sprite2D" parent="."]
+position = Vector2(1103, 4940)
+scale = Vector2(10.4907, 11.5685)
+texture = ExtResource("10_jklio")
+
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
