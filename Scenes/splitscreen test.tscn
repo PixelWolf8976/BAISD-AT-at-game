@@ -42,7 +42,7 @@ stretch = true
 
 [node name="SubViewport1" type="SubViewport" parent="HBoxContainer/Viewport1"]
 handle_input_locally = false
-size = Vector2i(958, 1080)
+size = Vector2i(2, 2)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/Viewport1/SubViewport1"]
@@ -67,7 +67,7 @@ stretch = true
 
 [node name="SubViewport2" type="SubViewport" parent="HBoxContainer/Viewport2"]
 handle_input_locally = false
-size = Vector2i(958, 1080)
+size = Vector2i(2, 2)
 render_target_update_mode = 4
 
 [node name="Camera2D" type="Camera2D" parent="HBoxContainer/Viewport2/SubViewport2"]
