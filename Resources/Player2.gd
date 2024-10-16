@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name player2
 
 @export var defaultMaxSpeed = 1250.0 * Global.speedMultiplier
 @export var corneringMaxSpeed = 1000.0 * Global.speedMultiplier

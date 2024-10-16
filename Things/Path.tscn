@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cycx54k60s5it"]
+[gd_scene load_steps=6 format=3 uid="uid://cycx54k60s5it"]
 
 [ext_resource type="Script" path="res://Resources/PathScript.gd" id="1_mdyco"]
 [ext_resource type="PackedScene" uid="uid://pvkwa02gp8lm" path="res://Scenes/barrier.tscn" id="1_nmdvo"]
 [ext_resource type="Texture2D" uid="uid://bg6clf8b37im3" path="res://Resources/straight foad.png" id="1_uq62d"]
 [ext_resource type="Texture2D" uid="uid://bs15q7uau5mxj" path="res://Resources/Bush.png" id="4_16l0m"]
+[ext_resource type="PackedScene" uid="uid://ce7y3sp6d2q0q" path="res://Things/Speed_boost.tscn" id="5_fcxa5"]
 
 [node name="Barriers" type="Node2D"]
 script = ExtResource("1_mdyco")
@@ -32,3 +33,11 @@ texture = ExtResource("4_16l0m")
 position = Vector2(0, -750)
 scale = Vector2(10, 10)
 texture = ExtResource("4_16l0m")
+
+[node name="SpeedBoost" parent="." instance=ExtResource("5_fcxa5")]
+position = Vector2(0, -150)
+rotation = 1.5708
+
+[node name="Speed boost" parent="." instance=ExtResource("5_fcxa5")]
+position = Vector2(0, 150)
+rotation = 1.5708

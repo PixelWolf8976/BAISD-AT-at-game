@@ -10,11 +10,13 @@ func _ready() -> void:
 	$AnimatedSprite2D.play()
 
 func _on_body_entered(body: Node2D) -> void:
-	body.defaultMaxSpeed = defaultMaxSpeed * speedBoost
-	body.corneringMaxSpeed = corneringMaxSpeed * speedBoost
-	body.acceleration = acceleration * speedBoost
+	if body is player1 || body is player2:
+		body.defaultMaxSpeed = defaultMaxSpeed * speedBoost
+		body.corneringMaxSpeed = corneringMaxSpeed * speedBoost
+		body.acceleration = acceleration * speedBoost
 
 func _on_body_exited(body: Node2D) -> void:
-	body.defaultMaxSpeed = defaultMaxSpeed
-	body.corneringMaxSpeed = corneringMaxSpeed
-	body.acceleration = acceleration
+	if body is player1 || body is player2:
+		body.defaultMaxSpeed = defaultMaxSpeed
+		body.corneringMaxSpeed = corneringMaxSpeed
+		body.acceleration = acceleration

@@ -149,18 +149,23 @@ scale = Vector2(1, -1)
 
 [node name="Barriers18" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(10606, 8684)
+rotation = 3.14159
 
 [node name="Barriers19" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(11566, 8684)
+rotation = 3.14159
 
 [node name="Barriers20" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(12526, 8684)
+rotation = 3.14159
 
 [node name="Barriers21" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(13486, 8684)
+rotation = 3.14159
 
 [node name="Barriers22" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(14446, 8684)
+rotation = 3.14159
 
 [node name="StaticBody2D7" parent="." instance=ExtResource("2_g6m3k")]
 position = Vector2(9858, 8692)
@@ -189,24 +194,31 @@ rotation = 1.5708
 
 [node name="Barriers23" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(3, 5252)
+rotation = 3.14159
 
 [node name="Barriers24" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(963, 5252)
+rotation = 3.14159
 
 [node name="Barriers25" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(1923, 5252)
+rotation = 3.14159
 
 [node name="Barriers26" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(2883, 5252)
+rotation = 3.14159
 
 [node name="Barriers27" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(3843, 5252)
+rotation = 3.14159
 
 [node name="Barriers28" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(4803, 5252)
+rotation = 3.14159
 
 [node name="Barriers29" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(5763, 5252)
+rotation = 3.14159
 
 [node name="StaticBody2D9" parent="." instance=ExtResource("2_g6m3k")]
 position = Vector2(-748, 8)
@@ -299,18 +311,23 @@ scale = Vector2(1, -1)
 
 [node name="Barriers35" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(-8690, 8683)
+rotation = 3.14159
 
 [node name="Barriers36" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(-7730, 8683)
+rotation = 3.14159
 
 [node name="Barriers37" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(-6770, 8683)
+rotation = 3.14159
 
 [node name="Barriers38" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(-5810, 8683)
+rotation = 3.14159
 
 [node name="Barriers39" parent="." instance=ExtResource("1_k0s8w")]
 position = Vector2(-4850, 8683)
+rotation = 3.14159
 
 [node name="StaticBody2D15" parent="." instance=ExtResource("2_g6m3k")]
 position = Vector2(-9438, 8691)
