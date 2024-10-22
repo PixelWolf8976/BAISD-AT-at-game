@@ -20,9 +20,11 @@ size = Vector2(277, 597)
 [node name="Track 2" type="Node2D"]
 
 [node name="Barriers" parent="." instance=ExtResource("1_pfmxn")]
+boostersActive = false
 
 [node name="Barriers2" parent="." instance=ExtResource("1_pfmxn")]
 position = Vector2(960, 0)
+boostersActive = false
 
 [node name="Barriers7" parent="." instance=ExtResource("1_pfmxn")]
 position = Vector2(5760, 0)
@@ -74,16 +76,16 @@ position = Vector2(11942, -5962)
 scale = Vector2(-1, 1)
 
 [node name="45Road4" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(11484, -6371)
-rotation = 0.785398
+position = Vector2(11467, -6391)
+rotation = 3.92699
 
 [node name="45Road5" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(10646, -7209)
-rotation = 0.785398
+position = Vector2(10629, -7229)
+rotation = 3.92699
 
 [node name="45Road6" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(9808, -8047)
-rotation = 0.785398
+position = Vector2(9791, -8067)
+rotation = 3.92699
 
 [node name="StaticBody2D4" parent="." instance=ExtResource("2_oa7yq")]
 position = Vector2(9382, -8525)
@@ -107,16 +109,16 @@ rotation = -1.5708
 scale = Vector2(-1, 1)
 
 [node name="45Road7" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(5557, -8067)
-rotation = -0.785398
+position = Vector2(5546, -8053)
+rotation = 2.35619
 
 [node name="45Road8" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(4719, -7229)
-rotation = -0.785398
+position = Vector2(4708, -7215)
+rotation = 2.35619
 
 [node name="45Road9" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(3881, -6391)
-rotation = -0.785398
+position = Vector2(3870, -6377)
+rotation = 2.35619
 
 [node name="StaticBody2D6" parent="." instance=ExtResource("2_oa7yq")]
 position = Vector2(3411, -5962)
@@ -150,20 +152,20 @@ position = Vector2(3428, 2246)
 rotation = -3.14159
 
 [node name="45Road10" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(2971, 2654)
-rotation = -0.785398
+position = Vector2(2960, 2665)
+rotation = 2.35619
 
 [node name="45Road11" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(2133, 3492)
-rotation = -0.785398
+position = Vector2(2122, 3503)
+rotation = 2.35619
 
 [node name="45Road12" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(1295, 4330)
-rotation = -0.785398
+position = Vector2(1284, 4341)
+rotation = 2.35619
 
 [node name="45Road13" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(457, 5168)
-rotation = -0.785398
+position = Vector2(446, 5179)
+rotation = 2.35619
 
 [node name="StaticBody2D8" parent="." instance=ExtResource("2_oa7yq")]
 position = Vector2(25, 5638)
@@ -191,20 +193,20 @@ position = Vector2(-8180, 5638)
 rotation = -1.5708
 
 [node name="45Road14" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(-8588, 5181)
-rotation = 0.785398
+position = Vector2(-8604, 5167)
+rotation = 3.92699
 
 [node name="45Road15" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(-9426, 4343)
-rotation = 0.785398
+position = Vector2(-9442, 4329)
+rotation = 3.92699
 
 [node name="45Road16" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(-10264, 3505)
-rotation = 0.785398
+position = Vector2(-10280, 3491)
+rotation = 3.92699
 
 [node name="45Road17" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(-11102, 2667)
-rotation = 0.785398
+position = Vector2(-11118, 2653)
+rotation = 3.92699
 
 [node name="Barriers29" parent="." instance=ExtResource("1_pfmxn")]
 position = Vector2(-7432, 5630)
@@ -240,12 +242,12 @@ position = Vector2(-11563, -214)
 scale = Vector2(-1, 1)
 
 [node name="45Road18" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(-12021, -623)
-rotation = 0.785398
+position = Vector2(-12031, -635)
+rotation = 3.92699
 
 [node name="45Road19" parent="." instance=ExtResource("3_yudh2")]
-position = Vector2(-12859, -1461)
-rotation = 0.785398
+position = Vector2(-12869, -1473)
+rotation = 3.92699
 
 [node name="StaticBody2D12" parent="." instance=ExtResource("2_oa7yq")]
 position = Vector2(-13330, -1886)
@@ -325,6 +327,7 @@ position = Vector2(-4800, 0)
 [node name="45Road23" parent="." instance=ExtResource("3_yudh2")]
 position = Vector2(-6357, -445)
 rotation = 0.785398
+boostersActive = false
 
 [node name="StaticBody2D15" type="StaticBody2D" parent="."]
 

@@ -20,9 +20,11 @@ size = Vector2(154, 597)
 [node name="Track 1" type="Node2D"]
 
 [node name="Barriers" parent="." instance=ExtResource("1_s6rg4")]
+boostersActive = false
 
 [node name="Barriers2" parent="." instance=ExtResource("1_s6rg4")]
 position = Vector2(960, 0)
+boostersActive = false
 
 [node name="Barriers3" parent="." instance=ExtResource("1_s6rg4")]
 position = Vector2(1920, 0)
@@ -65,12 +67,12 @@ position = Vector2(9680, -1764)
 rotation = 1.5708
 
 [node name="45Road3" parent="." instance=ExtResource("3_ghtrx")]
-position = Vector2(10088, -1307)
-rotation = -2.35619
+position = Vector2(10101, -1294)
+rotation = 0.785398
 
 [node name="45Road4" parent="." instance=ExtResource("3_ghtrx")]
-position = Vector2(10926, -469)
-rotation = -2.35619
+position = Vector2(10939, -456)
+rotation = 0.785398
 
 [node name="StaticBody2D4" parent="." instance=ExtResource("2_2wxdp")]
 position = Vector2(11396, -48)
@@ -98,16 +100,16 @@ position = Vector2(11396, 4328)
 scale = Vector2(-1, -1)
 
 [node name="45Road5" parent="." instance=ExtResource("3_ghtrx")]
-position = Vector2(10101, 5574)
-rotation = -0.785398
+position = Vector2(10081, 5587)
+rotation = 2.35619
 
 [node name="45Road6" parent="." instance=ExtResource("3_ghtrx")]
-position = Vector2(10939, 4736)
-rotation = -0.785398
+position = Vector2(10919, 4749)
+rotation = 2.35619
 
 [node name="45Road7" parent="." instance=ExtResource("3_ghtrx")]
-position = Vector2(9263, 6412)
-rotation = -0.785398
+position = Vector2(9243, 6425)
+rotation = 2.35619
 
 [node name="StaticBody2D6" parent="." instance=ExtResource("2_2wxdp")]
 position = Vector2(8834, 6883)
@@ -133,6 +135,7 @@ rotation = 3.14159
 [node name="Barriers20" parent="." instance=ExtResource("1_s6rg4")]
 position = Vector2(1366, 6875)
 rotation = 3.14159
+boostersActive = false
 
 [node name="StaticBody2D7" parent="." instance=ExtResource("2_2wxdp")]
 position = Vector2(618, 6883)
@@ -173,12 +176,12 @@ position = Vector2(1415, 2653)
 rotation = 1.5708
 
 [node name="45Road10" parent="." instance=ExtResource("3_ghtrx")]
-position = Vector2(2661, 3948)
-rotation = -2.35619
+position = Vector2(2665, 3976)
+rotation = 0.785398
 
 [node name="45Road11" parent="." instance=ExtResource("3_ghtrx")]
-position = Vector2(1823, 3110)
-rotation = -2.35619
+position = Vector2(1827, 3138)
+rotation = 0.785398
 
 [node name="StaticBody2D10" parent="." instance=ExtResource("2_2wxdp")]
 position = Vector2(3123, 4384)
@@ -243,12 +246,12 @@ position = Vector2(-67, 1.5)
 shape = SubResource("RectangleShape2D_3c288")
 
 [node name="45Road12" parent="." instance=ExtResource("3_ghtrx")]
-position = Vector2(-3516, 10104)
-rotation = -0.785398
+position = Vector2(-3539, 10112)
+rotation = 2.35619
 
 [node name="45Road13" parent="." instance=ExtResource("3_ghtrx")]
-position = Vector2(-2679, 9261)
-rotation = -0.785398
+position = Vector2(-2702, 9269)
+rotation = 2.35619
 
 [node name="StaticBody2D12" parent="." instance=ExtResource("2_2wxdp")]
 position = Vector2(-8324, 10570)
@@ -331,7 +334,8 @@ scale = Vector2(-1, -1)
 
 [node name="Barriers32" parent="." instance=ExtResource("1_s6rg4")]
 position = Vector2(-7434, 1195)
-rotation = 1.5708
+rotation = -1.5708
+boostersActive = false
 
 [node name="Barriers45" parent="." instance=ExtResource("1_s6rg4")]
 position = Vector2(-2880, 0)
@@ -374,6 +378,7 @@ rotation = 1.5708
 [node name="Barriers52" parent="." instance=ExtResource("1_s6rg4")]
 position = Vector2(3116, 7052)
 rotation = 1.5708
+isPartOfOverpass = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
