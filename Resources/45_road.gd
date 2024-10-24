@@ -24,7 +24,7 @@ func _ready():
 				rightBoost.active = false
 		else:
 			Global.chanceOfBooster *= 1.25
-			leftBoost.visible = false
+			leftBoost.visible = false 
 			leftBoost.active = false
 			rightBoost.visible = false
 			rightBoost.active = false

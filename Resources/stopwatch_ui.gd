@@ -2,6 +2,8 @@ extends CanvasLayer
 
 var elapsedTime := 0.0
 var stopwatchRunning := true
+var endElapsedTime := 0.0
+var finishRaceWaitTime := 1.0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -14,10 +16,14 @@ func _process(delta: float) -> void:
 				for i in range(2 - splitStr[1].length()):
 					out += "0"
 			$Label.text = out
+	elif $WinnerText.visible:
+		endElapsedTime += delta
+		if endElapsedTime > finishRaceWaitTime:
+			$PressKeyToExit.visible = true
 
 ## For once race is finished, look for input to go back to menu
 func _input(event: InputEvent):
-	if !stopwatchRunning && event is InputEventKey && event.is_pressed():
+	if !stopwatchRunning && event is InputEventKey && event.is_pressed() && endElapsedTime > finishRaceWaitTime:
 		get_tree().paused = false
 		get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
 
@@ -32,7 +38,6 @@ func finishRace(winner):
 		get_tree().paused = true
 		stopStopwatch()
 		$WinnerText.visible = true
-		$PressKeyToExit.visible = true
 		$TextureRect.visible = true
 		$WinnerText.text = winner.type + " wins!"
 		if winner.type == "Red":
