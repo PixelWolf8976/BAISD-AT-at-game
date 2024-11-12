@@ -44,6 +44,8 @@ func finishRace(winner):
 			$WinnerText.label_settings.font_color = Color(255, 0, 0)
 		else:
 			$WinnerText.label_settings.font_color = Color(0, 0, 255)
+	
+	
 
 func resetStopwatch():
 	stopwatchRunning = false
