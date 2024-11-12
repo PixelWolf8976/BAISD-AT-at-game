@@ -45,7 +45,7 @@ func finishRace(winner):
 		else:
 			$WinnerText.label_settings.font_color = Color(0, 0, 255)
 	
-	
+	Global.saveScoreToFile("Bob", elapsedTime)
 
 func resetStopwatch():
 	stopwatchRunning = false

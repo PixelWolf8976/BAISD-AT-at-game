@@ -7,7 +7,7 @@ var originalChanceOfBooster := 0.1 # Percent from 0 to 1
 var chanceOfBooster := originalChanceOfBooster
 var encryptionKey := 127
 
-func saveScoreToFile(name: String, time: float, level) -> void:
+func saveScoreToFile(name: String, time: float) -> void:
 	var filePath := ""
 	
 	if level == 1:
@@ -112,6 +112,3 @@ func setLevel(lev):
 
 func getLevel():
 	return level
-
-func _ready() -> void:
-	saveScoreToFile("b", 32, 1)
