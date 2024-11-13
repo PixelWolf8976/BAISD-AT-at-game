@@ -1,17 +1,31 @@
-[gd_scene load_steps=7 format=3 uid="uid://bb7832r2ujysd"]
+[gd_scene load_steps=9 format=3 uid="uid://bb7832r2ujysd"]
 
 [ext_resource type="Script" path="res://Resources/Level Select Script.gd" id="1_siwes"]
 [ext_resource type="PackedScene" uid="uid://c4i0kiiyqsnlp" path="res://Scenes/constant_ui.tscn" id="2_t6fss"]
 [ext_resource type="Texture2D" uid="uid://dsp181dbnb5w7" path="res://Resources/Updated Main Menu.png" id="3_vw5v2"]
 [ext_resource type="FontFile" uid="uid://xr3kdpi70bvj" path="res://Resources/Pixellari.ttf" id="4_ptcp6"]
+[ext_resource type="Texture2D" uid="uid://bx0ee7exof3ms" path="res://Resources/square.png" id="5_4s3j8"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_6vjdx"]
 font = ExtResource("4_ptcp6")
 font_size = 65
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
 
 [sub_resource type="LabelSettings" id="LabelSettings_tx5hg"]
 font = ExtResource("4_ptcp6")
 font_size = 115
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="LabelSettings" id="LabelSettings_isomh"]
+font = ExtResource("4_ptcp6")
+font_size = 40
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
 
 [node name="Track Selector" type="Control"]
 layout_mode = 3
@@ -135,6 +149,45 @@ offset_right = 1920.0
 offset_bottom = 201.0
 text = "Level Select"
 label_settings = SubResource("LabelSettings_tx5hg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreboardBackground" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 848.0
+offset_top = 421.0
+offset_right = 1120.0
+offset_bottom = 693.0
+texture = ExtResource("5_4s3j8")
+
+[node name="Level1Scoreboard" type="Label" parent="."]
+layout_mode = 0
+offset_left = 792.0
+offset_top = 672.0
+offset_right = 1176.0
+offset_bottom = 888.0
+label_settings = SubResource("LabelSettings_isomh")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Level2Scoreboard" type="Label" parent="."]
+visible = false
+offset_left = 792.0
+offset_top = 672.0
+offset_right = 1176.0
+offset_bottom = 888.0
+label_settings = SubResource("LabelSettings_isomh")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Level3Scoreboard" type="Label" parent="."]
+visible = false
+offset_left = 792.0
+offset_top = 672.0
+offset_right = 1176.0
+offset_bottom = 888.0
+label_settings = SubResource("LabelSettings_isomh")
 horizontal_alignment = 1
 vertical_alignment = 1
 

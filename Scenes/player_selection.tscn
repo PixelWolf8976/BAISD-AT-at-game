@@ -8,14 +8,23 @@
 [sub_resource type="LabelSettings" id="LabelSettings_c5wx6"]
 font = ExtResource("4_a0doa")
 font_size = 40
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
 
 [sub_resource type="LabelSettings" id="LabelSettings_rqp1d"]
 font = ExtResource("4_a0doa")
 font_size = 40
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
 
 [sub_resource type="LabelSettings" id="LabelSettings_4geeg"]
 font = ExtResource("4_a0doa")
 font_size = 100
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(5, 5)
 
 [node name="Player selection" type="Control"]
 layout_mode = 3
