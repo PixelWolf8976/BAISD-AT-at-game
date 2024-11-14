@@ -173,6 +173,7 @@ vertical_alignment = 1
 
 [node name="Level2Scoreboard" type="Label" parent="."]
 visible = false
+layout_mode = 0
 offset_left = 792.0
 offset_top = 672.0
 offset_right = 1176.0
@@ -183,6 +184,7 @@ vertical_alignment = 1
 
 [node name="Level3Scoreboard" type="Label" parent="."]
 visible = false
+layout_mode = 0
 offset_left = 792.0
 offset_top = 672.0
 offset_right = 1176.0

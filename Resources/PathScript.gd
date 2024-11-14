@@ -42,8 +42,8 @@ func _ready():
 		$Bush.visible = false
 		$Bush2.visible = false
 	else:
-		$Bush.rotation = -rotation
-		$Bush2.rotation = -rotation
+		$Bush.rotation_degrees = 360 - rotation_degrees
+		$Bush2.rotation_degrees = 360 - rotation_degrees
 	
 	if isOverpass:
 		$StaticBody2D/Sprite2D.visible = false

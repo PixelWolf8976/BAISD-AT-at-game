@@ -8,6 +8,7 @@ extends Area2D
 var active := true
 
 func _ready() -> void:
+	#speedBoost = round(0.0023 * pow(randi_range(0, 100), 2) + 2)
 	$AnimatedSprite2D.speed_scale = round(speedBoost)
 	$AnimatedSprite2D.play()
 

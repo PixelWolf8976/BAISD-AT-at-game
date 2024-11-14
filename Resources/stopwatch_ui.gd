@@ -49,6 +49,7 @@ func finishRace(winner):
 		$WinnerText.visible = true
 		$TextureRect.visible = true
 		$LineEdit.visible = true
+		$LineEdit.grab_focus()
 		$WinnerText.text = winner.type + " wins!"
 		winnerType = winner.type
 		if winner.type == "Red":

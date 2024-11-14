@@ -5,7 +5,7 @@ var playerCount := 0
 var speedMultiplier := 1.5
 var originalChanceOfBooster := 0.1 # Percent from 0 to 1
 var chanceOfBooster := originalChanceOfBooster
-var encryptionKey := 127
+var encryptionKey := 120
 
 func saveScoreToFile(name: String, time: float) -> void:
 	var filePath := ""
@@ -20,6 +20,9 @@ func saveScoreToFile(name: String, time: float) -> void:
 	var content := getFileContent(filePath)
 	
 	var splitContent := content.split("\n", false)
+	
+	for i in range(splitContent.size()):
+		splitContent[i] = decrypt(splitContent[i])
 	
 	var names: PackedStringArray
 	var times: PackedFloat64Array
@@ -47,6 +50,32 @@ func saveScoreToFile(name: String, time: float) -> void:
 	
 	names = sorted[0]
 	times = sorted[1]
+	
+	if names.size() > 5: # Saves two extra just in case
+		names.resize(5)
+		times.resize(5)
+	
+	var seen: PackedStringArray
+	var seenPos: PackedInt64Array
+	
+	for i in range(names.size()):
+		var previouslySeen := false
+		
+		for s in seen:
+			if names[i] == s:
+				previouslySeen = true
+				break
+		
+		if previouslySeen:
+			seenPos.append(i)
+		else:
+			seen.append(names[i])
+	
+	seenPos.reverse()
+	
+	for sPos in seenPos:
+		names.remove_at(sPos)
+		times.remove_at(sPos)
 	
 	writeFileContent(filePath, names, times)
 
@@ -81,31 +110,41 @@ func writeFileContent(path: String, names: PackedStringArray, times: PackedFloat
 	var stringToStore := ""
 	
 	for i in range(names.size()):
-		stringToStore += names[i] + ":" + String.num(times[i], 2) + "\n"
+		stringToStore += encypt(names[i] + ":" + String.num(times[i], 2)) + "\n"
 	
 	var file := FileAccess.open(path, FileAccess.WRITE)
 	file.store_string(stringToStore)
 	file.close()
 
 func encypt(toEncrypt: String) -> String:
-	var charInt := toEncrypt.to_ascii_buffer()[0]
+	var output := ""
 	
-	for i in range(encryptionKey):
-		charInt += 1
-		if charInt > 126:
-			charInt = 32
+	for c in toEncrypt:
+		var charInt := c.to_ascii_buffer()[0]
+		
+		for i in range(encryptionKey):
+			charInt += 1
+			if charInt > 126:
+				charInt = 32
+		
+		output += char(charInt)
 	
-	return char(charInt)
+	return output
 
 func decrypt(toDecrypt: String) -> String:
-	var charInt := toDecrypt.to_ascii_buffer()[0]
+	var output := ""
 	
-	for i in range(encryptionKey):
-		charInt -= 1
-		if charInt < 32:
-			charInt = 126
+	for c in toDecrypt:
+		var charInt := c.to_ascii_buffer()[0]
+		
+		for i in range(encryptionKey):
+			charInt -= 1
+			if charInt < 32:
+				charInt = 126
+		
+		output += char(charInt)
 	
-	return char(charInt)
+	return output
 
 func setLevel(lev):
 	level = lev

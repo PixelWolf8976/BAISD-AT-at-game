@@ -17,6 +17,9 @@ func _ready() -> void:
 		
 		var splitContent := fileContent.split("\n", false)
 		
+		for ii in range(splitContent.size()):
+			splitContent[ii] = Global.decrypt(splitContent[ii])
+		
 		var names: PackedStringArray
 		var times: PackedStringArray
 		
