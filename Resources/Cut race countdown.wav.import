@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dyvi4r23cqn5o"
+path="res://.godot/imported/Cut race countdown.wav-ad8262b52529a38399acb8c9d21cda69.sample"
+
+[deps]
+
+source_file="res://Resources/Cut race countdown.wav"
+dest_files=["res://.godot/imported/Cut race countdown.wav-ad8262b52529a38399acb8c9d21cda69.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
