@@ -35,6 +35,14 @@ func _input(event: InputEvent):
 		get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
 	elif textFocused && !stopwatchRunning && event is InputEventKey && event.is_pressed() && event.is_action_pressed("Enter"):
 		$LineEdit.release_focus()
+		
+		var name: String = $LineEdit.text
+		if name.is_empty():
+			name = winnerType
+		Global.saveScoreToFile(name, elapsedTime)
+		
+		get_tree().paused = false
+		get_tree().change_scene_to_file("res://Scenes/main_menu.tscn")
 
 func startStopwatch():
 	stopwatchRunning = true

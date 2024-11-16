@@ -35,7 +35,7 @@ func _process(delta: float) -> void:
 		if elapsedCountdownTime == 0:
 			$AudioStreamPlayer.play()
 		$Label.visible = true
-		$Label.text = str(3 - round(elapsedCountdownTime))
+		$Label.text = str(round(3.5 - elapsedCountdownTime))
 		if $Label.text == "0":
 			$Label.text = "GO!"
 		
@@ -49,7 +49,7 @@ func _process(delta: float) -> void:
 			$Label.label_settings.font_color = Color(1, 0, 0)
 		
 		elapsedCountdownTime += delta
-		if elapsedCountdownTime >= 3:
+		if elapsedCountdownTime >= 3.5:
 			timerDone = true
 			get_tree().paused = false
 	else:

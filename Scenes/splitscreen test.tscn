@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://loi804kpfwop"]
+[gd_scene load_steps=12 format=3 uid="uid://loi804kpfwop"]
 
 [ext_resource type="Script" path="res://Resources/splitscreen.gd" id="1_kqktd"]
 [ext_resource type="PackedScene" uid="uid://c4i0kiiyqsnlp" path="res://Scenes/constant_ui.tscn" id="2_dhrqv"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c3y0ckuevbl3t" path="res://Scenes/stopwatch_ui.tscn" id="6_y7r0x"]
 [ext_resource type="Script" path="res://Resources/Camera2D2.gd" id="8_86p24"]
 [ext_resource type="FontFile" uid="uid://xr3kdpi70bvj" path="res://Resources/Pixellari.ttf" id="8_rf7dl"]
+[ext_resource type="AudioStream" uid="uid://dyvi4r23cqn5o" path="res://Resources/Cut race countdown.wav" id="10_gng1a"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_l3wqi"]
 font = ExtResource("8_rf7dl")
@@ -89,3 +90,4 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_gng1a")
